@@ -244,6 +244,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | ⭐ EPIC-KITCHENS-100 | 2021 | 100 h / 90K segments | Action recognition, many | [Paper](https://epic-kitchens.github.io/public/ek100.pdf) | [Site](https://epic-kitchens.github.io/) |
 | ChildLens | 2026 | 108.58 h / 354 videos | Child activity analysis | [Paper](https://link.springer.com/article/10.3758/s13428-026-02982-6) | [Data](https://doi.org/10.17617/4.fe) |
 | EgoScale | 2026 | 20k+ h labeled manipulation (paper) | Action, dexterous transfer | [Paper](https://arxiv.org/abs/2602.16710) | N/A |
+| World In Your Hands | 2025 | 1000+ h labeled manipulation (paper) | Action, dexterous transfer, VLA training | [Paper](https://arxiv.org/abs/2512.24310) | [Github](https://github.com/tars-robotics/World-In-Your-Hands) |
 | EgoCampus | 2025 | ~32 h / campus paths (paper) | Gaze, pedestrian ego | [Paper](https://arxiv.org/abs/2512.07668) | [GitHub](https://github.com/ComputerVisionRutgers/EgoCampus) |
 | AEA | 2024 | 143 seq. / ~7.3 h | Everyday activities, Aria | [Paper](https://arxiv.org/abs/2402.13349) | [Site](https://www.projectaria.com/datasets/aea/) |
 | EgoSurgery (Phase / Tool / HTS) | 2024 | Open-surgery ego video | Phase, tools, segmentation | [Paper](https://arxiv.org/abs/2405.19644) | [GitHub](https://github.com/Fujiry0/EgoSurgery) |
@@ -285,6 +286,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 - **EgoScale** (2026) — 20k+ h labeled manipulation (paper); Action, dexterous transfer.
   [![arXiv](https://img.shields.io/badge/arXiv-2602.16710-b31b1b.svg)](https://arxiv.org/abs/2602.16710) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2602.16710)
+
+  **World In Your Hands** (2025) - 1000+ h of labeled human manipulation data; Action, Vision-Langauge Annotations; VLA traininig.
+  [![arXiv](https://img.shields.io/badge/arXiv-2512.24310-b31b1b.svg)](https://arxiv.org/abs/2512.24310) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://wiyh.tars-ai.com/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/tars-robotics/World-In-Your-Hands) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/projectaria/aria-everyday-activities)
 
 - **EgoCampus** (2025) — ~32 h / campus paths (paper); Gaze, pedestrian ego.
   [![arXiv](https://img.shields.io/badge/arXiv-2512.07668-b31b1b.svg)](https://arxiv.org/abs/2512.07668) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2512.07668) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/ComputerVisionRutgers/EgoCampus)
