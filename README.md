@@ -33,6 +33,9 @@ This repository tracks egocentric video datasets through a task-first view: ever
 
 Sorted newest to oldest, with flagship surveys and corpus papers highlighted first.
 
+- **Building Egocentric Procedural AI Assistant: Methods, Benchmarks, and Challenges** (2025) — Li et al., 2025 survey and benchmark paper of egocentric procedural activity understanding, focus on building egocentric procedural AI assistant.
+  [![arXiv](https://img.shields.io/badge/arXiv-2511.13261-b31b1b.svg)](https://arxiv.org/abs/2511.13261)
+
 - [⭐️] **Challenges and Trends in Egocentric Vision: A Survey** (2025) — Li et al., 2025 survey of datasets, tasks, benchmarks, and open challenges in egocentric vision.
   [![arXiv](https://img.shields.io/badge/arXiv-2503.15275-b31b1b.svg)](https://arxiv.org/abs/2503.15275)
 
