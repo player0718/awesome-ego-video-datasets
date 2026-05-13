@@ -404,6 +404,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | EgoFun3D | 2026 | 271 egocentric videos | Interactive 3D objects, function templates | [Paper](https://arxiv.org/abs/2604.11038) | [Site](https://3dlg-hcvc.github.io/EgoFun3D/) |
 | SHOW3D | 2026 | In-the-wild ego-exo HOI | 3D hand-object annotations | [Paper](https://arxiv.org/abs/2603.28760) | N/A |
 | FEEL | 2026 | Force-sync kitchen ego video | Physical action understanding | [Paper](https://arxiv.org/abs/2603.15847) | [Site](https://www.cs.umd.edu/~edessale/feel) |
+| EgoEMG | 2026 | 41 participants / 10+ h | EMG + vision hand pose | [Paper](https://arxiv.org/abs/2605.05712) | [GitHub](https://github.com/zhenqis123/EgoEMG) |
 | EgoDex | 2025 | 829 h / 30K trajectories | Dexterous manipulation, pose | [Paper](https://arxiv.org/abs/2505.11709) | [GitHub](https://github.com/apple/ml-egodex) |
 | EgoPoints | 2025 | Point tracks + synthetic | Tracking in ego video | [Paper](https://arxiv.org/abs/2412.04592) | [GitHub](https://github.com/AhmadDarKhalil/EgoPoints) |
 | EgoObjects | 2023 | 9.2K+ videos | Detection, instance seg | [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Zhu_EgoObjects_A_Large-Scale_Egocentric_Dataset_for_Fine-Grained_Object_Understanding_ICCV_2023_paper.html) | [GitHub](https://github.com/facebookresearch/EgoObjects) |
@@ -449,6 +450,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 - **FEEL** (2026) — Force-sync kitchen ego video; Physical action understanding.
   [![arXiv](https://img.shields.io/badge/arXiv-2603.15847-b31b1b.svg)](https://arxiv.org/abs/2603.15847) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2603.15847)
+
+- **EgoEMG** (2026) — 10+ h of synchronized bilateral EMG, IMU, egocentric RGB, external RGB-D, and mocap-derived hand pose across 41 participants and 60 gesture classes.
+  [![arXiv](https://img.shields.io/badge/arXiv-2605.05712-b31b1b.svg)](https://arxiv.org/abs/2605.05712) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/zhenqis123/EgoEMG)
 
 - **EgoDex** (2025) — 829 h / 30K trajectories; Dexterous manipulation, pose.
   [![arXiv](https://img.shields.io/badge/arXiv-2505.11709-b31b1b.svg)](https://arxiv.org/abs/2505.11709) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2505.11709) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/apple/ml-egodex)
@@ -513,9 +517,11 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |-----------|------------|--------------|---------------|-------|
 | TouchMoment | Frame-precise hand-object contact moment detection | TouchMoment | [Paper](https://arxiv.org/abs/2604.12343) | Standalone |
 | EgoFun3D | Interactive 3D object modeling and function-template inference | EgoFun3D | [Site](https://3dlg-hcvc.github.io/EgoFun3D/) | Dataset+benchmark |
+| EgoEMG | EMG-to-pose, vision-to-pose, and EMG+vision fusion | EgoEMG | [GitHub](https://github.com/zhenqis123/EgoEMG) | Dataset+benchmark |
 | AssemblyHands | Egocentric 3D hand pose | Assembly101 | [Site](https://assemblyhands.github.io/) | Standalone |
 | VISOR | Video object segmentation, hand–object relations | EPIC-KITCHENS | [Site](https://epic-kitchens.github.io/VISOR) | Standalone |
 | TREK-150 | Egocentric single-object tracking | EPIC-KITCHENS | [Site](https://machinelearning.uniud.it/datasets/trek150/) | Standalone |
+| EggHand | Egocentric 3D hand pose forecasting | EgoExo4D | [Paper](https://arxiv.org/abs/2605.07642) | Method benchmark |
 | FPHA | Hand action + 3D hand pose | FPHA | [Site](https://guiggh.github.io/publications/first-person-hands/) | Standalone |
 
 ## 📋 Procedural Activities & Skill Learning
@@ -530,6 +536,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | EgoLive | 2026 | Large-scale real-world task routines | Robot manipulation learning | [Paper](https://arxiv.org/abs/2604.23570) | N/A |
 | EgoMAGIC | 2026 | 3,355 videos / 50 medical tasks | Field medicine, action detection | [Paper](https://arxiv.org/abs/2604.22036) | [Zenodo](https://doi.org/10.5281/zenodo.19239154) |
 | GM-100 | 2026 | 100+ tasks / 13K+ trajectories | Robot manipulation, embodied evaluation | [Paper](https://arxiv.org/abs/2601.11421) | [Site](https://www.rhos.ai/research/gm-100) |
+| SABER | 2026 | 100+ h / 44.8K samples | Retail VLA adaptation | [Paper](https://arxiv.org/abs/2605.09613) | [Site](https://dreamvu.ai/saber/) |
 | EgoYC2 / Exo2EgoDVC | 2025 | ~43 h cooking | Dense captioning, procedural | [Paper](https://arxiv.org/abs/2311.16444) | [GitHub](https://github.com/ut-vision/Exo2EgoDVC) |
 | EgoExoLearn | 2024 | 120 h ego+exo | Procedural, async views | [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Huang_EgoExoLearn_A_Dataset_for_Bridging_Asynchronous_Ego-_and_Exo-centric_View_CVPR_2024_paper.html) | [GitHub](https://github.com/OpenGVLab/EgoExoLearn) |
 | IndustReal | 2024 | ~6 h industrial | Procedure steps, errors | [Paper](https://openaccess.thecvf.com/content/WACV2024/html/Schoonbeek_IndustReal_A_Dataset_for_Procedure_Step_Recognition_Handling_Execution_Errors_WACV_2024_paper.html) | [Site](https://timschoonbeek.github.io/industreal.html) |
@@ -552,6 +559,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 - **GM-100** (2026) — 100+ detail-oriented robot manipulation tasks with 13K+ teleoperated trajectories and robot first-person camera views for embodied skill evaluation.
   [![arXiv](https://img.shields.io/badge/arXiv-2601.11421-b31b1b.svg)](https://arxiv.org/abs/2601.11421) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://www.rhos.ai/research/gm-100) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/yuz1wan/GM-X)
+
+- **SABER** (2026) — 100+ h of natural in-store retail activity with head-mounted egocentric video, 360-degree exocentric video, and 44.8K action samples for VLA adaptation.
+  [![arXiv](https://img.shields.io/badge/arXiv-2605.09613-b31b1b.svg)](https://arxiv.org/abs/2605.09613) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://dreamvu.ai/saber/) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/DreamVu/SABER-10K)
 
 - **EgoYC2 / Exo2EgoDVC** (2025) — ~43 h cooking; Dense captioning, procedural.
   [![arXiv](https://img.shields.io/badge/arXiv-2311.16444-b31b1b.svg)](https://arxiv.org/abs/2311.16444) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2311.16444) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/ut-vision/Exo2EgoDVC)
