@@ -77,6 +77,8 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | Ego-1K | 2026 | Multiview clips (~1K takes) | Neural 3D/4D synthesis | [Paper](https://arxiv.org/abs/2603.13741) | [Hugging Face](https://huggingface.co/datasets/facebook/ego-1k) |
 | In-lab | 2026 | Lab tabletop trajectories | Skills, world models (w/ DreamDojo) | [Paper](https://arxiv.org/abs/2602.06949) | N/A |
 | EgoEdit | 2025 | 100K editing pairs | Egocentric video editing | [Paper](https://arxiv.org/abs/2512.06065) | [Site](https://snap-research.github.io/EgoEdit) |
+| HumanNet | 2026 | ~1M h human-centric video (ego + exo) | VLA / embodied pretraining | [Paper](https://arxiv.org/abs/2605.06747) | N/A |
+| MobileEgo Anywhere | 2026 | 200 h smartphone-collected long-horizon ego | Long-horizon ego data infra, VLA | [Paper](https://arxiv.org/abs/2605.05945) | N/A |
 
 ### Entries
 
@@ -97,6 +99,12 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 - **EgoEdit** (2025) — 100K editing pairs; Egocentric video editing.
   [![arXiv](https://img.shields.io/badge/arXiv-2512.06065-b31b1b.svg)](https://arxiv.org/abs/2512.06065) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2512.06065)
+
+- **HumanNet** (2026) — ~1M h of human-centric video (mix of ego and exo) with interaction-centric annotations; the authors report 1k h of ego human video outperforms 100 h of real-robot data for VLA training.
+  [![arXiv](https://img.shields.io/badge/arXiv-2605.06747-b31b1b.svg)](https://arxiv.org/abs/2605.06747)
+
+- **MobileEgo Anywhere** (2026) — 200 h of hour-plus egocentric trajectories collected on commodity smartphones, released with an open-source mobile capture app and a processing pipeline aimed at VLA pretraining.
+  [![arXiv](https://img.shields.io/badge/arXiv-2605.05945-b31b1b.svg)](https://arxiv.org/abs/2605.05945)
 
 ### Benchmarks built on these datasets
 
@@ -249,6 +257,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | EgoScale | 2026 | 20k+ h labeled manipulation (paper) | Action, dexterous transfer | [Paper](https://arxiv.org/abs/2602.16710) | N/A |
 | World In Your Hands | 2025 | 1000+ h labeled manipulation (paper) | Action, dexterous transfer, VLA training | [Paper](https://arxiv.org/abs/2512.24310) | [Github](https://github.com/tars-robotics/World-In-Your-Hands) |
 | EgoCampus | 2025 | ~32 h / campus paths (paper) | Gaze, pedestrian ego | [Paper](https://arxiv.org/abs/2512.07668) | [GitHub](https://github.com/ComputerVisionRutgers/EgoCampus) |
+| CogDrive (EyeCue) | 2026 | Multi-scenario driving clips | Driver cognitive-distraction detection, gaze + ego | [Paper](https://arxiv.org/abs/2605.07859) | N/A |
 | AEA | 2024 | 143 seq. / ~7.3 h | Everyday activities, Aria | [Paper](https://arxiv.org/abs/2402.13349) | [Site](https://www.projectaria.com/datasets/aea/) |
 | EgoSurgery (Phase / Tool / HTS) | 2024 | Open-surgery ego video | Phase, tools, segmentation | [Phase](https://arxiv.org/abs/2405.19644) / [Tool](https://arxiv.org/abs/2406.03095) / [HTS](https://arxiv.org/abs/2503.18755) | [GitHub](https://github.com/Fujiry0/EgoSurgery) |
 | EgoExo-Fitness | 2024 | 32 h / 1,276 seq. | Full-body action, quality assessment | [Paper](https://arxiv.org/abs/2406.08877) | [GitHub](https://github.com/iSEE-Laboratory/EgoExo-Fitness) |
@@ -295,6 +304,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 - **EgoCampus** (2025) — ~32 h / campus paths (paper); Gaze, pedestrian ego.
   [![arXiv](https://img.shields.io/badge/arXiv-2512.07668-b31b1b.svg)](https://arxiv.org/abs/2512.07668) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2512.07668) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/ComputerVisionRutgers/EgoCampus)
+
+- **CogDrive (EyeCue)** (2026) — Augmented multi-scenario driving dataset paired with the EyeCue gaze-empowered ego-video framework for driver cognitive-distraction detection (reported 74.38% accuracy).
+  [![arXiv](https://img.shields.io/badge/arXiv-2605.07859-b31b1b.svg)](https://arxiv.org/abs/2605.07859)
 
 - **AEA** (2024) — 143 seq. / ~7.3 h; Everyday activities, Aria.
   [![arXiv](https://img.shields.io/badge/arXiv-2402.13349-b31b1b.svg)](https://arxiv.org/abs/2402.13349) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2402.13349) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/projectaria/aria-everyday-activities)
@@ -597,6 +609,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |-----------|------------|--------------|---------------|-------|
 | EgoMAGIC | Field-medicine action detection | EgoMAGIC | [Zenodo](https://doi.org/10.5281/zenodo.19239154) | Dataset+benchmark |
 | GM-100 | Detail-oriented robot manipulation evaluation | GM-100 | [Site](https://www.rhos.ai/research/gm-100) | Dataset+benchmark |
+| TAVIS | Active-vision imitation learning on humanoid robots (GR1T2, Reachy2) in IsaacLab; TAVIS-Head + TAVIS-Hands suites with the GALT anticipatory-gaze metric | Simulation-only (no real-data release) | [Paper](https://arxiv.org/abs/2605.07943) | Standalone benchmark |
 
 ## 🗺️ 3D Scene Understanding & Localization
 
