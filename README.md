@@ -39,7 +39,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 - [⭐️] **Challenges and Trends in Egocentric Vision: A Survey** (2025) — Li et al., 2025 survey of datasets, tasks, benchmarks, and open challenges in egocentric vision.
   [![arXiv](https://img.shields.io/badge/arXiv-2503.15275-b31b1b.svg)](https://arxiv.org/abs/2503.15275)
 
-- [⭐️] **Bridging Perspectives: A Survey on Cross-view Collaborative Intelligence with Egocentric-Exocentric Vision** (2025) — Cross-view survey covering ego-exo collaboration, paired capture, and collaborative perception.
+- **Bridging Perspectives: A Survey on Cross-view Collaborative Intelligence with Egocentric-Exocentric Vision** (2025) — Cross-view survey covering ego-exo collaboration, paired capture, and collaborative perception.
   [![arXiv](https://img.shields.io/badge/arXiv-2506.06253-b31b1b.svg)](https://arxiv.org/abs/2506.06253)
 
 - **HD-EPIC: A Highly-Detailed Egocentric Video Dataset** (2025) — Dataset paper introducing fine-grained kitchen understanding with dense multimodal annotations.
@@ -75,7 +75,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | Name | Year | Scale | Key tasks | Paper | Link |
 |------|------|-------|-----------|-------|------|
 | ⭐ Ropedia Xperience-10M | 2026 | Large multi-stream experiences | Multimodal ego learning | N/A | [Hugging Face](https://huggingface.co/datasets/ropedia-ai/xperience-10m) |
-| ⭐ EgoVid-5M | 2024 | 5M clips | Video generation, motion+text | [Paper](https://arxiv.org/abs/2411.08380) | [Site](https://egovid.github.io/) |
+| EgoVid-5M | 2024 | 5M clips | Video generation, motion+text | [Paper](https://arxiv.org/abs/2411.08380) | [Site](https://egovid.github.io/) |
 | DreamDojo-HV | 2026 | Very large FP video (see paper) | World models, pretraining | [Paper](https://arxiv.org/abs/2602.06949) | N/A |
 | Ego-1K | 2026 | Multiview clips (~1K takes) | Neural 3D/4D synthesis | [Paper](https://arxiv.org/abs/2603.13741) | [Hugging Face](https://huggingface.co/datasets/facebook/ego-1k) |
 | In-lab | 2026 | Lab tabletop trajectories | Skills, world models (w/ DreamDojo) | [Paper](https://arxiv.org/abs/2602.06949) | N/A |
@@ -88,7 +88,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 - [⭐️] **Ropedia Xperience-10M** (2026) — 10M multimodal experiences with 6 RGB streams, stereo depth, pose/SLAM, hand-body mocap, audio, and IMU for large-scale ego pretraining.
   [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://ropedia.com/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/Ropedia/HOMIE-toolkit) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/ropedia-ai/xperience-10m)
 
-- [⭐️] **EgoVid-5M** (2024) — 5M first-person clips curated for text-and-motion-conditioned video generation from wearable footage.
+- **EgoVid-5M** (2024) — 5M first-person clips curated for text-and-motion-conditioned video generation from wearable footage.
   [![arXiv](https://img.shields.io/badge/arXiv-2411.08380-b31b1b.svg)](https://arxiv.org/abs/2411.08380) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2411.08380) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/JeffWang987/EgoVid)
 
 - **DreamDojo-HV** (2026) — Very large FP video (see paper); World models, pretraining.
@@ -203,6 +203,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | Name | Year | Scale | Key tasks | Paper | Link |
 |------|------|-------|-----------|-------|------|
 | ⭐ HD-EPIC | 2025 | ~41 h / dense labels | Fine-grained kitchen, VQA | [Paper](https://arxiv.org/abs/2502.04144) | [Site](https://hd-epic.github.io/) |
+| ⭐ EgoClip | 2022 | 3.8M clip–text pairs | Video-language pretraining | [Paper](https://arxiv.org/abs/2206.01670) | [GitHub](https://github.com/showlab/EgoVLP) |
 | EgoTL | 2026 | 100+ daily household tasks | Long-horizon reasoning, spatial QA | [Paper](https://arxiv.org/abs/2604.09535) | [Site](https://ego-tl.github.io/) |
 | MM-Conv | 2026 | 6.7 h / 4,211 expressions | Context-aware 3D dialogue grounding | [Paper](https://arxiv.org/abs/2605.21796) | N/A |
 | Minerva-Ego | 2026 | 1,160 QA / 156 videos | Spatiotemporal reasoning traces | [Paper](https://arxiv.org/abs/2605.15342) | [GitHub](https://github.com/google-deepmind/neptune) |
@@ -215,7 +216,6 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | HowToDIV | 2025 | ~24 h instructional | Dialog, procedural QA | [Paper](https://arxiv.org/abs/2508.11192) | [GitHub](https://github.com/google/howtodiv) |
 | InterVLA | 2025 | 11.4 h interactions | Instruction, ego–exo mocap | [Paper](https://arxiv.org/abs/2508.04681) | [Site](https://liangxuy.github.io/InterVLA/) |
 | AssistQ | 2022 | 100 long videos / 529 QA | Instructional QA | [Paper](https://arxiv.org/abs/2203.04203) | [GitHub](https://github.com/showlab/AssistQ) |
-| EgoClip | 2022 | 3.8M clip–text pairs | Video-language pretraining | [Paper](https://arxiv.org/abs/2206.01670) | [GitHub](https://github.com/showlab/EgoVLP) |
 | EgoTaskQA | 2022 | ~2K videos / 40K QA | Causal & task QA | [Paper](https://arxiv.org/abs/2210.03929) | [Site](https://sites.google.com/view/egotaskqa) |
 | EgoVQA | 2019 | 600+ QAs | Video QA | [Paper](https://openaccess.thecvf.com/content_ICCVW_2019/html/EPIC/Fan_EgoVQA_-_An_Egocentric_Video_Question_Answering_Benchmark_Dataset_ICCVW_2019_paper.html) | N/A |
 | NoRA | 2026 | 1,420 clips / support graphs | Normative action reasoning | [Paper](https://arxiv.org/abs/2606.04806) | N/A |
@@ -264,7 +264,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 - **AssistQ** (2022) — 100 long videos / 529 QA; Instructional QA.
   [![arXiv](https://img.shields.io/badge/arXiv-2203.04203-b31b1b.svg)](https://arxiv.org/abs/2203.04203) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/showlab/AssistQ)
 
-- **EgoClip** (2022) — 3.8M clip–text pairs; Video-language pretraining.
+- [⭐️] **EgoClip** (2022) — 3.8M clip–text pairs; Video-language pretraining.
   [![arXiv](https://img.shields.io/badge/arXiv-2206.01670-b31b1b.svg)](https://arxiv.org/abs/2206.01670) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/showlab/EgoVLP)
 
 - **EgoTaskQA** (2022) — ~2K videos / 40K QA; Causal & task QA.
@@ -487,9 +487,10 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Name | Year | Scale | Key tasks | Paper | Link |
 |------|------|-------|-----------|-------|------|
-| ⭐ AssemblyHands | 2023 | 3M images / hands | 3D hand pose, assembly | [Paper](https://openaccess.thecvf.com/content/CVPR2023/html/Ohkawa_AssemblyHands_Towards_Egocentric_Activity_Understanding_via_3D_Hand_Pose_Estimation_CVPR_2023_paper.html) | [Site](https://assemblyhands.github.io/) |
 | ⭐ HOI4D | 2022 | 2.4M frames / 4K seq. | 4D HOI | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_HOI4D_A_4D_Egocentric_Dataset_for_Category-Level_Human-Object_Interaction_CVPR_2022_paper.html) | [Site](https://hoi4d.github.io/) |
 | ⭐ FPHA | 2018 | 1.2K seq. hand action | Hand pose + action | [Paper](https://openaccess.thecvf.com/content_cvpr_2018/html/Garcia-Hernando_First-Person_Hand_Action_CVPR_2018_paper.html) | [Site](https://guiggh.github.io/publications/first-person-hands/) |
+| ⭐ EgoDex | 2025 | 829 h / 30K trajectories | Dexterous manipulation, pose | [Paper](https://arxiv.org/abs/2505.11709) | [GitHub](https://github.com/apple/ml-egodex) |
+| AssemblyHands | 2023 | 3M images / hands | 3D hand pose, assembly | [Paper](https://openaccess.thecvf.com/content/CVPR2023/html/Ohkawa_AssemblyHands_Towards_Egocentric_Activity_Understanding_via_3D_Hand_Pose_Estimation_CVPR_2023_paper.html) | [Site](https://assemblyhands.github.io/) |
 | EgoTouch | 2026 | 1,891 episodes / 208 tasks | Tactile HOI, vision-to-touch | [Paper](https://arxiv.org/abs/2605.13083) | [HF](https://huggingface.co/datasets/zhenyuxie-zhzh/EgoTouch_hdf5) |
 | DexGloveHOI | 2026 | 3.5 h / 100K+ samples | Vision-IMU 3D hand tracking | [Paper](https://arxiv.org/abs/2605.21714) | N/A |
 | EgoEVHands | 2026 | 5,419 annotated seq. | Stereo event 3D hand pose, gesture | [Paper](https://arxiv.org/abs/2605.12297) | [GitHub](https://github.com/ZJUWang01/EgoEV-HandPose) |
@@ -499,7 +500,6 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | SHOW3D | 2026 | In-the-wild ego-exo HOI | 3D hand-object annotations | [Paper](https://arxiv.org/abs/2603.28760) | N/A |
 | FEEL | 2026 | Force-sync kitchen ego video | Physical action understanding | [Paper](https://arxiv.org/abs/2603.15847) | [Site](https://www.cs.umd.edu/~edessale/feel) |
 | EgoEMG | 2026 | 41 participants / 10+ h | EMG + vision hand pose | [Paper](https://arxiv.org/abs/2605.05712) | [GitHub](https://github.com/zhenqis123/EgoEMG) |
-| EgoDex | 2025 | 829 h / 30K trajectories | Dexterous manipulation, pose | [Paper](https://arxiv.org/abs/2505.11709) | [GitHub](https://github.com/apple/ml-egodex) |
 | EgoPoints | 2025 | Point tracks + synthetic | Tracking in ego video | [Paper](https://arxiv.org/abs/2412.04592) | [GitHub](https://github.com/AhmadDarKhalil/EgoPoints) |
 | EgoObjects | 2023 | 9.2K+ videos | Detection, instance seg | [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Zhu_EgoObjects_A_Large-Scale_Egocentric_Dataset_for_Fine-Grained_Object_Understanding_ICCV_2023_paper.html) | [GitHub](https://github.com/facebookresearch/EgoObjects) |
 | ENIGMA-51 | 2023 | 22 h industrial | Fine-grained behavior | [Paper](https://arxiv.org/abs/2309.14809) | [Site](https://fpv-iplab.github.io/ENIGMA-51/) |
@@ -525,7 +525,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 ### Entries
 
-- [⭐️] **AssemblyHands** (2023) — 3M egocentric hand images on top of Assembly101 for detailed 3D hand pose estimation during assembly.
+- **AssemblyHands** (2023) — 3M egocentric hand images on top of Assembly101 for detailed 3D hand pose estimation during assembly.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2023/html/Ohkawa_AssemblyHands_Towards_Egocentric_Activity_Understanding_via_3D_Hand_Pose_Estimation_CVPR_2023_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://openaccess.thecvf.com/content/CVPR2023/html/Ohkawa_AssemblyHands_Towards_Egocentric_Activity_Understanding_via_3D_Hand_Pose_Estimation_CVPR_2023_paper.html) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/facebookresearch/assemblyhands-toolkit)
 
 - [⭐️] **HOI4D** (2022) — 2.4M RGB-D frames with object poses, hand poses, interaction regions, and motion segmentation for category-level 4D HOI.
@@ -561,7 +561,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 - **EgoEMG** (2026) — 10+ h of synchronized bilateral EMG, IMU, egocentric RGB, external RGB-D, and mocap-derived hand pose across 41 participants and 60 gesture classes.
   [![arXiv](https://img.shields.io/badge/arXiv-2605.05712-b31b1b.svg)](https://arxiv.org/abs/2605.05712) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/zhenqis123/EgoEMG)
 
-- **EgoDex** (2025) — 829 h / 30K trajectories; Dexterous manipulation, pose.
+- [⭐️] **EgoDex** (2025) — 829 h / 30K trajectories; Dexterous manipulation, pose.
   [![arXiv](https://img.shields.io/badge/arXiv-2505.11709-b31b1b.svg)](https://arxiv.org/abs/2505.11709) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2505.11709) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/apple/ml-egodex)
 
 - **EgoPoints** (2025) — Point tracks + synthetic; Tracking in ego video.
@@ -656,6 +656,8 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Name | Year | Scale | Key tasks | Paper | Link |
 |------|------|-------|-----------|-------|------|
+| ⭐ EgoExoLearn | 2024 | 120 h ego+exo | Procedural, async views | [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Huang_EgoExoLearn_A_Dataset_for_Bridging_Asynchronous_Ego-_and_Exo-centric_View_CVPR_2024_paper.html) | [GitHub](https://github.com/OpenGVLab/EgoExoLearn) |
+| ⭐ Assembly101 | 2022 | 513 h multiview | Assembly, procedure | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.html) | [Site](https://assembly-101.github.io/) |
 | EgoVerse | 2026 | 1,362 h / ~80K episodes | Robot learning, manipulation skills | [Paper](https://arxiv.org/abs/2604.07607) | [Site](https://egoverse.ai/) |
 | EgoLive | 2026 | Large-scale real-world task routines | Robot manipulation learning | [Paper](https://arxiv.org/abs/2604.23570) | N/A |
 | EgoMAGIC | 2026 | 3,355 videos / 50 medical tasks | Field medicine, action detection | [Paper](https://arxiv.org/abs/2604.22036) | [Zenodo](https://doi.org/10.5281/zenodo.19239154) |
@@ -665,9 +667,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | GM-100 | 2026 | 100+ tasks / 13K+ trajectories | Robot manipulation, embodied evaluation | [Paper](https://arxiv.org/abs/2601.11421) | [Site](https://www.rhos.ai/research/gm-100) |
 | SABER | 2026 | 100+ h / 44.8K samples | Retail VLA adaptation | [Paper](https://arxiv.org/abs/2605.09613) | [Site](https://dreamvu.ai/saber/) |
 | EgoYC2 / Exo2EgoDVC | 2025 | ~43 h cooking | Dense captioning, procedural | [Paper](https://arxiv.org/abs/2311.16444) | [GitHub](https://github.com/ut-vision/Exo2EgoDVC) |
-| EgoExoLearn | 2024 | 120 h ego+exo | Procedural, async views | [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Huang_EgoExoLearn_A_Dataset_for_Bridging_Asynchronous_Ego-_and_Exo-centric_View_CVPR_2024_paper.html) | [GitHub](https://github.com/OpenGVLab/EgoExoLearn) |
 | IndustReal | 2024 | ~6 h industrial | Procedure steps, errors | [Paper](https://openaccess.thecvf.com/content/WACV2024/html/Schoonbeek_IndustReal_A_Dataset_for_Procedure_Step_Recognition_Handling_Execution_Errors_WACV_2024_paper.html) | [Site](https://timschoonbeek.github.io/industreal.html) |
-| Assembly101 | 2022 | 513 h multiview | Assembly, procedure | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.html) | [Site](https://assembly-101.github.io/) |
 | EgoProceL | 2022 | 62 videos / 16 tasks | Procedure learning | [Paper](https://arxiv.org/abs/2207.10883) | [Site](https://sid2697.github.io/egoprocel/) |
 | EPIC-Tent | 2019 | 7+ h, tent assembly | Procedural, dual HMD + gaze | [Paper](https://openaccess.thecvf.com/content_ICCVW_2019/html/EPIC/Jang_EPIC-Tent_An_Egocentric_Video_Dataset_for_Camping_Tent_Assembly_ICCVW_2019_paper.html) | [Site](https://data.bris.ac.uk/data/dataset/2ite3tu1u53n42hjfh3886sa86) |
 | CMU-MMAC | 2011 | 25 subjects, 5 cooking recipes | procedural activities & skill learning | [Paper](https://publications.ri.cmu.edu/guide-to-the-carnegie-mellon-university-multimodal-activity-cmu-mmac-database) | [Site](http://kitchen.cs.cmu.edu/) |
@@ -703,13 +703,13 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 - **EgoYC2 / Exo2EgoDVC** (2025) — ~43 h cooking; Dense captioning, procedural.
   [![arXiv](https://img.shields.io/badge/arXiv-2311.16444-b31b1b.svg)](https://arxiv.org/abs/2311.16444) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2311.16444) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/ut-vision/Exo2EgoDVC)
 
-- **EgoExoLearn** (2024) — 120 h ego+exo; Procedural, async views.
+- [⭐️] **EgoExoLearn** (2024) — 120 h ego+exo; Procedural, async views.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2024/html/Huang_EgoExoLearn_A_Dataset_for_Bridging_Asynchronous_Ego-_and_Exo-centric_View_CVPR_2024_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://openaccess.thecvf.com/content/CVPR2024/html/Huang_EgoExoLearn_A_Dataset_for_Bridging_Asynchronous_Ego-_and_Exo-centric_View_CVPR_2024_paper.html) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/OpenGVLab/EgoExoLearn) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/hyf015/EgoExoLearn)
 
 - **IndustReal** (2024) — ~6 h industrial; Procedure steps, errors.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/WACV2024/html/Schoonbeek_IndustReal_A_Dataset_for_Procedure_Step_Recognition_Handling_Execution_Errors_WACV_2024_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://timschoonbeek.github.io/industreal.html)
 
-- **Assembly101** (2022) — 513 h multiview; Assembly, procedure.
+- [⭐️] **Assembly101** (2022) — 513 h multiview; Assembly, procedure.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2022/html/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://openaccess.thecvf.com/content/CVPR2022/html/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.html)
 
 - **EgoProceL** (2022) — 62 videos / 16 tasks; Procedure learning.
@@ -752,10 +752,10 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | Name | Year | Scale | Key tasks | Paper | Link |
 |------|------|-------|-----------|-------|------|
 | ⭐ Ego-Exo4D | 2024 | 1,286+ h ego+exo | Skilled activity, many tasks | [Paper](https://arxiv.org/abs/2311.18259) | [Site](https://ego-exo4d-data.org/) |
+| ⭐ ADT (Aria Digital Twin) | 2023 | 200 seq., 2 scenes | Egocentric 3D perception | [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Pan_Aria_Digital_Twin_A_New_Benchmark_Dataset_for_Egocentric_3D_ICCV_2023_paper.html) | [Site](https://www.projectaria.com/datasets/adt/) |
 | PRISM | 2026 | 270K samples / 11.8M frames | Retail embodied VLM, spatial reasoning | [Paper](https://arxiv.org/abs/2603.29281) | [HF](https://huggingface.co/datasets/DreamVu/PRISM-100K) |
 | EgoTraj | 2026 | 10.7 h / 1.15M frames | Egocentric trajectory prediction | [Paper](https://arxiv.org/abs/2605.19004) | [GitHub](https://github.com/yehiahmad/EgoTraj) |
 | AIST-Living | 2026 | Egocentric video + GT motion in scanned env. | Global pose, localization | [Paper](https://arxiv.org/abs/2605.20889) | [Site](https://deguchihiroyuki.github.io/Map-Mono-Ego-Project/) |
-| ADT (Aria Digital Twin) | 2023 | 200 seq., 2 scenes | Egocentric 3D perception | [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Pan_Aria_Digital_Twin_A_New_Benchmark_Dataset_for_Egocentric_3D_ICCV_2023_paper.html) | [Site](https://www.projectaria.com/datasets/adt/) |
 | PVSG | 2023 | 400 vids, ~150K frames | Panoptic video scene graph (ego + third-person) | [Paper](https://openaccess.thecvf.com/content/CVPR2023/html/Yang_Panoptic_Video_Scene_Graph_Generation_CVPR_2023_paper.html) | [Site](https://jingkang50.github.io/PVSG/) |
 | DR(eye)VE | 2018 | ~6 h driving, 555K frames | Gaze prediction, driving ego video | [Paper](https://arxiv.org/abs/1705.03854) | [Site](http://aimagelab.ing.unimore.it/dreyeve) |
 | EgoCart | 2018 | Retail RGB-D, 9 videos | Indoor / cart localization | [Paper](https://doi.org/10.1109/TCSVT.2019.2941040) | [Site](https://iplab.dmi.unict.it/EgocentricShoppingCartLocalization/) |
@@ -777,7 +777,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 - **AIST-Living** (2026) — Dataset introduced with Map-Mono-Ego that pairs monocular egocentric video with ground-truth human motion in a pre-scanned 3D environment for globally consistent pose estimation.
   [![arXiv](https://img.shields.io/badge/arXiv-2605.20889-b31b1b.svg)](https://arxiv.org/abs/2605.20889) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://deguchihiroyuki.github.io/Map-Mono-Ego-Project/)
 
-- **ADT (Aria Digital Twin)** (2023) — 200 seq., 2 scenes; Egocentric 3D perception.
+- [⭐️] **ADT (Aria Digital Twin)** (2023) — 200 seq., 2 scenes; Egocentric 3D perception.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/ICCV2023/html/Pan_Aria_Digital_Twin_A_New_Benchmark_Dataset_for_Egocentric_3D_ICCV_2023_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://www.projectaria.com/datasets/adt/) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/projectaria/aria-digital-twin)
 
 - **PVSG** (2023) — 400 vids, ~150K frames; Panoptic video scene graph (ego + third-person).
