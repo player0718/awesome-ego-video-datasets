@@ -63,6 +63,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 - **Charades-Ego: A Large-Scale Dataset of Paired Third and First Person Videos** (2018) — Early paired ego-exo benchmark for activity transfer and alignment.
   [![arXiv](https://img.shields.io/badge/arXiv-1804.09626-b31b1b.svg)](https://arxiv.org/abs/1804.09626)
 
+- **Position: Life-Logging Video Streams Make the Privacy-Utility Trade-off Inevitable** (2026) — Zou et al., 2026 position paper arguing the privacy-utility trade-off in always-on life-logging video streams (smart glasses, body cameras) is a foundational challenge for proactive wearable AI, calling for pipeline-aware privacy-preserving designs, leakage metrics, and standardized benchmarks.
+  [![arXiv](https://img.shields.io/badge/arXiv-2605.10404-b31b1b.svg)](https://arxiv.org/abs/2605.10404)
+
 ## 🎬 Video Generation & World-Model Pretraining
 
 > Datasets here emphasize large-scale first-person pretraining corpora, video generation, editing, or world-model supervision from ego video.
