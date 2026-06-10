@@ -490,7 +490,6 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | ⭐ HOI4D | 2022 | 2.4M frames / 4K seq. | 4D HOI | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_HOI4D_A_4D_Egocentric_Dataset_for_Category-Level_Human-Object_Interaction_CVPR_2022_paper.html) | [Site](https://hoi4d.github.io/) |
 | ⭐ FPHA | 2018 | 1.2K seq. hand action | Hand pose + action | [Paper](https://openaccess.thecvf.com/content_cvpr_2018/html/Garcia-Hernando_First-Person_Hand_Action_CVPR_2018_paper.html) | [Site](https://guiggh.github.io/publications/first-person-hands/) |
 | ⭐ EgoDex | 2025 | 829 h / 30K trajectories | Dexterous manipulation, pose | [Paper](https://arxiv.org/abs/2505.11709) | [GitHub](https://github.com/apple/ml-egodex) |
-| AssemblyHands | 2023 | 3M images / hands | 3D hand pose, assembly | [Paper](https://openaccess.thecvf.com/content/CVPR2023/html/Ohkawa_AssemblyHands_Towards_Egocentric_Activity_Understanding_via_3D_Hand_Pose_Estimation_CVPR_2023_paper.html) | [Site](https://assemblyhands.github.io/) |
 | EgoTouch | 2026 | 1,891 episodes / 208 tasks | Tactile HOI, vision-to-touch | [Paper](https://arxiv.org/abs/2605.13083) | [HF](https://huggingface.co/datasets/zhenyuxie-zhzh/EgoTouch_hdf5) |
 | DexGloveHOI | 2026 | 3.5 h / 100K+ samples | Vision-IMU 3D hand tracking | [Paper](https://arxiv.org/abs/2605.21714) | N/A |
 | EgoEVHands | 2026 | 5,419 annotated seq. | Stereo event 3D hand pose, gesture | [Paper](https://arxiv.org/abs/2605.12297) | [GitHub](https://github.com/ZJUWang01/EgoEV-HandPose) |
@@ -524,9 +523,6 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | HA-Ego-1K | 2026 | ~24 h / 484 multi-view clips | Manipulation, 6-cam ego + IMU | N/A | [HF](https://huggingface.co/datasets/humanarchive/HA-Ego-1K) |
 
 ### Entries
-
-- **AssemblyHands** (2023) — 3M egocentric hand images on top of Assembly101 for detailed 3D hand pose estimation during assembly.
-  [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2023/html/Ohkawa_AssemblyHands_Towards_Egocentric_Activity_Understanding_via_3D_Hand_Pose_Estimation_CVPR_2023_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://openaccess.thecvf.com/content/CVPR2023/html/Ohkawa_AssemblyHands_Towards_Egocentric_Activity_Understanding_via_3D_Hand_Pose_Estimation_CVPR_2023_paper.html) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/facebookresearch/assemblyhands-toolkit)
 
 - [⭐️] **HOI4D** (2022) — 2.4M RGB-D frames with object poses, hand poses, interaction regions, and motion segmentation for category-level 4D HOI.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_HOI4D_A_4D_Egocentric_Dataset_for_Category-Level_Human-Object_Interaction_CVPR_2022_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_HOI4D_A_4D_Egocentric_Dataset_for_Category-Level_Human-Object_Interaction_CVPR_2022_paper.html)
@@ -640,7 +636,6 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | EgoTouch / TouchAnything | Vision-to-touch prediction for bimanual HOI | EgoTouch | [HF](https://huggingface.co/datasets/zhenyuxie-zhzh/EgoTouch_hdf5) | Dataset+benchmark |
 | DexGloveHOI | Vision-IMU 3D hand tracking under HOI occlusion | DexGloveHOI | [Paper](https://arxiv.org/abs/2605.21714) | Dataset+benchmark |
 | EgoEVHands | Stereo event 3D hand pose and gesture recognition | EgoEVHands | [GitHub](https://github.com/ZJUWang01/EgoEV-HandPose) | Dataset+benchmark |
-| AssemblyHands | Egocentric 3D hand pose | Assembly101 | [Site](https://assemblyhands.github.io/) | Standalone |
 | VISOR | Video object segmentation, hand–object relations | EPIC-KITCHENS | [Site](https://epic-kitchens.github.io/VISOR) | Standalone |
 | TREK-150 | Egocentric single-object tracking | EPIC-KITCHENS | [Site](https://machinelearning.uniud.it/datasets/trek150/) | Standalone |
 | EggHand | Egocentric 3D hand pose forecasting | EgoExo4D | [Paper](https://arxiv.org/abs/2605.07642) | Method benchmark |
