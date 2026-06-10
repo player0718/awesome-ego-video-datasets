@@ -123,13 +123,13 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Name | Year | Scale | Key tasks | Paper | Link |
 |------|------|-------|-----------|-------|------|
+| ⭐ EgoLife | 2025 | ~266–300 h daily life | Long-form assistants, memory | [Paper](https://arxiv.org/abs/2503.03803) | [Site](https://egolife-ai.github.io/) |
+| ⭐ EgoSchema | 2023 | 250+ h / 5K QA | Long-form video QA | [Paper](https://arxiv.org/abs/2308.09126) | [Site](https://egoschema.github.io/) |
 | SuperMemory-VQA | 2026 | 52.9 h / 4,853 QA | Long-horizon memory VQA | [Paper](https://arxiv.org/abs/2606.00825) | [HF](https://huggingface.co/datasets/OSU-AIoT-MLSys-Lab/SuperMemory-VQA) |
 | EgoMemReason | 2026 | 500 MCQs over EgoLife | Week-long memory reasoning | [Paper](https://arxiv.org/abs/2605.09874) | [HF](https://huggingface.co/datasets/Ted412/EgoMemReason) |
 | EgoExoMem | 2026 | 2.6K MCQs / 390 videos | Cross-view memory reasoning | [Paper](https://arxiv.org/abs/2605.18734) | [GitHub](https://github.com/RuipingL/EgoExoMem) |
 | EgoIntrospect | 2026 | 180 h / 60 subjects | Internal-state reasoning, memory | [Paper](https://arxiv.org/abs/2605.17262) | [Site](https://ego-introspect.github.io/) |
 | MA-EgoQA | 2026 | 1,741 QA / 6 agents / 7 days | Multi-agent egocentric QA | [Paper](https://arxiv.org/abs/2603.09827) | [Site](https://ma-egoqa.github.io/) |
-| ⭐ EgoLife | 2025 | ~266–300 h daily life | Long-form assistants, memory | [Paper](https://arxiv.org/abs/2503.03803) | [Site](https://egolife-ai.github.io/) |
-| ⭐ EgoSchema | 2023 | 250+ h / 5K QA | Long-form video QA | [Paper](https://arxiv.org/abs/2308.09126) | [Site](https://egoschema.github.io/) |
 | VidChapters-7M | 2023 | 817K videos / 7M chapters | Chaptering (not ego-only) | [Paper](https://arxiv.org/abs/2309.13952) | [Site](https://antoyang.github.io/vidchapters.html) |
 | Multi-Ego | 2022 | ~12 h / 41 seq. | Multi-wearer, summarization | [Paper](https://openaccess.thecvf.com/content/WACV2022/html/Elfeki_Multi-Stream_Dynamic_Video_Summarization_WACV_2022_paper.html) | [GitHub](https://github.com/M-Elfeki/Multi-DPP) |
 | DoMSEV | 2018 | 80 h, 48 seq. | Semantic fast-forward, first-person video | [Paper](https://openaccess.thecvf.com/content_cvpr_2018/html/Silva_A_Weighted_Sparse_CVPR_2018_paper.html) | [Site](https://www.verlab.dcc.ufmg.br/semantic-hyperlapse/cvpr2018-dataset/) |
@@ -202,6 +202,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Name | Year | Scale | Key tasks | Paper | Link |
 |------|------|-------|-----------|-------|------|
+| ⭐ HD-EPIC | 2025 | ~41 h / dense labels | Fine-grained kitchen, VQA | [Paper](https://arxiv.org/abs/2502.04144) | [Site](https://hd-epic.github.io/) |
 | EgoTL | 2026 | 100+ daily household tasks | Long-horizon reasoning, spatial QA | [Paper](https://arxiv.org/abs/2604.09535) | [Site](https://ego-tl.github.io/) |
 | MM-Conv | 2026 | 6.7 h / 4,211 expressions | Context-aware 3D dialogue grounding | [Paper](https://arxiv.org/abs/2605.21796) | N/A |
 | Minerva-Ego | 2026 | 1,160 QA / 156 videos | Spatiotemporal reasoning traces | [Paper](https://arxiv.org/abs/2605.15342) | [GitHub](https://github.com/google-deepmind/neptune) |
@@ -210,7 +211,6 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | MyEgo | 2026 | 541 long videos / 5K QA | Personalized VideoQA, ego-grounding | [Paper](https://arxiv.org/abs/2604.01966) | [GitHub](https://github.com/Ryougetsu3606/MyEgo) |
 | LifeDialBench / EgoMem | 2026 | EgoMem + LifeMem (coming soon) | Lifelog memory, online eval | [Paper](https://arxiv.org/abs/2604.11182) | [GitHub](https://github.com/qys77714/LifeDialBench) |
 | Ego2Web | 2026 | 500 video-instruction pairs | Egocentric video-grounded web agents | [Paper](https://arxiv.org/abs/2603.22529) | [HF](https://huggingface.co/datasets/Shoubin/Ego2Web) |
-| ⭐ HD-EPIC | 2025 | ~41 h / dense labels | Fine-grained kitchen, VQA | [Paper](https://arxiv.org/abs/2502.04144) | [Site](https://hd-epic.github.io/) |
 | EgoEMS | 2025 | 20+ h emergency scenarios | EMS QA, multimodal | [Paper](https://arxiv.org/abs/2511.09894) | [GitHub](https://github.com/UVA-DSA/EgoEMS) |
 | HowToDIV | 2025 | ~24 h instructional | Dialog, procedural QA | [Paper](https://arxiv.org/abs/2508.11192) | [GitHub](https://github.com/google/howtodiv) |
 | InterVLA | 2025 | 11.4 h interactions | Instruction, ego–exo mocap | [Paper](https://arxiv.org/abs/2508.04681) | [Site](https://liangxuy.github.io/InterVLA/) |
