@@ -9,6 +9,8 @@
 </p>
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Papers](https://img.shields.io/badge/Papers-138-blue.svg)](#papers--surveys)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
 
 </div>
@@ -29,7 +31,7 @@ This repository tracks egocentric video datasets through a task-first view: ever
 - ✋ [Hand–Object Interaction, Dexterity & 3D](#-handobject-interaction-dexterity--3d)
 - 📋 [Procedural Activities & Skill Learning](#-procedural-activities--skill-learning)
 - 🗺️ [3D Scene Understanding & Localization](#-3d-scene-understanding--localization)
-- 🛠️ [Tools & Libraries](#-tools--libraries) | 🔗 [Related Awesome Lists](#-related-awesome-lists) | 🤝 [Contributing](#-contributing) | 📄 [License](#license)
+- 🛠️ [Tools & Libraries](#-tools--libraries) | 🔗 [Related Awesome Lists](#-related-awesome-lists) | 🤝 [Contributing](#-contributing) | ❤️ [Contact](#-contact) | 📄 [License](#license)
 
 ## Papers & Surveys
 
@@ -820,6 +822,10 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 2. Keep primary entries unique: one full entry under one topic, cross-links everywhere else.
 3. Preserve newest-to-oldest ordering inside each topic block, with flagship entries kept at the top.
 4. Follow the detailed checklist in [CONTRIBUTING.md](CONTRIBUTING.md) before opening a PR.
+
+## ❤️ Contact
+
+If you have suggestions, dataset updates, or find this project useful, feel free to contact Shen Yujiao at [shenyujiao18@gmail.com](mailto:shenyujiao18@gmail.com).
 
 ## License
 
