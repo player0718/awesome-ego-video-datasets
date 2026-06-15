@@ -209,6 +209,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | Minerva-Ego | 2026 | 1,160 QA / 156 videos | Spatiotemporal reasoning traces | [Paper](https://arxiv.org/abs/2605.15342) | [GitHub](https://github.com/google-deepmind/neptune) |
 | EgoEverything | 2026 | 100+ h / 5K+ MCQs | Long-context AR VideoQA | [Paper](https://arxiv.org/abs/2604.08342) | N/A |
 | EgoEsportsQA | 2026 | 1,745 QA pairs | Esports VideoQA, reasoning | [Paper](https://arxiv.org/abs/2604.12320) | N/A |
+| GameplayQA | 2026 | ~2.4K QA / 15 task categories | POV-synced multi-video gameplay QA | [Paper](https://arxiv.org/abs/2603.24329) | [Site](https://hats-ict.github.io/gameplayqa/) |
 | MyEgo | 2026 | 541 long videos / 5K QA | Personalized VideoQA, ego-grounding | [Paper](https://arxiv.org/abs/2604.01966) | [GitHub](https://github.com/Ryougetsu3606/MyEgo) |
 | LifeDialBench / EgoMem | 2026 | EgoMem + LifeMem (coming soon) | Lifelog memory, online eval | [Paper](https://arxiv.org/abs/2604.11182) | [GitHub](https://github.com/qys77714/LifeDialBench) |
 | Ego2Web | 2026 | 500 video-instruction pairs | Egocentric video-grounded web agents | [Paper](https://arxiv.org/abs/2603.22529) | [HF](https://huggingface.co/datasets/Shoubin/Ego2Web) |
@@ -244,6 +245,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 - **EgoEsportsQA** (2026) — 1,745 expert QA pairs from first-person shooter esports videos for testing fast virtual-scene perception and tactical reasoning.
   [![arXiv](https://img.shields.io/badge/arXiv-2604.12320-b31b1b.svg)](https://arxiv.org/abs/2604.12320)
+
+- **GameplayQA** (2026) — ~2.4K QA pairs across 15 task categories and 3 cognitive levels for decision-dense, POV-synced multi-video understanding of multi-agent 3D gameplay, with densely labeled first-person player viewpoints (1.22 labels/sec); egocentric viewpoints are virtual/synthetic. ACL 2026.
+  [![arXiv](https://img.shields.io/badge/arXiv-2603.24329-b31b1b.svg)](https://arxiv.org/abs/2603.24329) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://hats-ict.github.io/gameplayqa/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/HATS-ICT/GameplayQA) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/wangyz1999/GameplayQA)
 
 - **MyEgo** (2026) — 541 long egocentric videos with 5K personalized questions about the camera wearer, their activities, and past context.
   [![arXiv](https://img.shields.io/badge/arXiv-2604.01966-b31b1b.svg)](https://arxiv.org/abs/2604.01966) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/Ryougetsu3606/MyEgo)
@@ -294,6 +298,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | Minerva-Ego | Egocentric multi-step VideoQA with spatiotemporal reasoning traces | HD-EPIC | [GitHub](https://github.com/google-deepmind/neptune) | Standalone |
 | EgoEverything | Long-context AR VideoQA | EgoEverything | [Paper](https://arxiv.org/abs/2604.08342) | Standalone |
 | EgoEsportsQA | Esports VideoQA and tactical reasoning | EgoEsportsQA | [Paper](https://arxiv.org/abs/2604.12320) | Standalone |
+| GameplayQA | Decision-dense POV-synced multi-video gameplay QA | GameplayQA | [Site](https://hats-ict.github.io/gameplayqa/) | Dataset+benchmark |
 | MyEgo | Personalized egocentric VideoQA | MyEgo | [GitHub](https://github.com/Ryougetsu3606/MyEgo) | Dataset+benchmark |
 | LifeDialBench / EgoMem | Lifelog memory and online evaluation | EgoMem | [GitHub](https://github.com/qys77714/LifeDialBench) | Dataset+benchmark |
 | Ego2Web | Egocentric video-grounded web-agent execution | Ego2Web | [Site](https://ego2web.github.io/) | Dataset+benchmark |
