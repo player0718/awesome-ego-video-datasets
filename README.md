@@ -9,7 +9,7 @@
 </p>
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Papers](https://img.shields.io/badge/Papers-153-blue.svg)](#papers--surveys)
+[![Papers](https://img.shields.io/badge/Papers-178-blue.svg)](#papers--surveys)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
 
@@ -36,6 +36,12 @@ This repository tracks egocentric video datasets through a task-first view: ever
 ## Papers & Surveys
 
 Sorted newest to oldest, with flagship surveys and corpus papers highlighted first.
+
+- **Vision-Language Models for Egocentric Video: From Hand-Object Interaction to Embodied AI** (2026) — Survey of egocentric VLMs spanning datasets, hand-object interaction, temporal reasoning, multimodal learning, wearable assistance, and human-to-robot transfer.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.18671-b31b1b.svg)](https://arxiv.org/abs/2608.18671)
+
+- **Position: Life-Logging Video Streams Make the Privacy-Utility Trade-off Inevitable** (2026) — Position paper arguing that privacy leakage in always-on wearable video should be evaluated across the full data and model pipeline with standardized metrics and benchmarks.
+  [![arXiv](https://img.shields.io/badge/arXiv-2605.10404-b31b1b.svg)](https://arxiv.org/abs/2605.10404)
 
 - **Building Egocentric Procedural AI Assistant: Methods, Benchmarks, and Challenges** (2025) — Li et al., 2025 survey and benchmark paper of egocentric procedural activity understanding, focus on building egocentric procedural AI assistant.
   [![arXiv](https://img.shields.io/badge/arXiv-2511.13261-b31b1b.svg)](https://arxiv.org/abs/2511.13261)
@@ -67,9 +73,6 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 - **Charades-Ego: A Large-Scale Dataset of Paired Third and First Person Videos** (2018) — Early paired ego-exo benchmark for activity transfer and alignment.
   [![arXiv](https://img.shields.io/badge/arXiv-1804.09626-b31b1b.svg)](https://arxiv.org/abs/1804.09626)
 
-- **Position: Life-Logging Video Streams Make the Privacy-Utility Trade-off Inevitable** (2026) — Zou et al., 2026 position paper arguing the privacy-utility trade-off in always-on life-logging video streams (smart glasses, body cameras) is a foundational challenge for proactive wearable AI, calling for pipeline-aware privacy-preserving designs, leakage metrics, and standardized benchmarks.
-  [![arXiv](https://img.shields.io/badge/arXiv-2605.10404-b31b1b.svg)](https://arxiv.org/abs/2605.10404)
-
 ## 🎬 Video Generation & World-Model Pretraining
 
 > Datasets here emphasize large-scale first-person pretraining corpora, video generation, editing, or world-model supervision from ego video.
@@ -79,6 +82,13 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | Name | Year | Scale | Key tasks | Paper | Link |
 |------|------|-------|-----------|-------|------|
 | ⭐ Ropedia Xperience-10M | 2026 | Large multi-stream experiences | Multimodal ego learning | N/A | [Hugging Face](https://huggingface.co/datasets/ropedia-ai/xperience-10m) |
+| WorldRover-10M | 2026 | 6,003 seq. / 21.9M frames / 202.7 h | First-person world models, 3D exploration | [Paper](https://arxiv.org/abs/2608.15659) | N/A |
+| H2R-Bench | 2026 | 6 manipulation families / 2 robot embodiments | Human-to-robot video generation | [Paper](https://arxiv.org/abs/2608.13049) | N/A |
+| Ego-OSCAR-550h | 2026 | ~550 h/camera / 1,462 stereo sessions | Stereo-inertial ego pretraining, capture | [Paper](https://arxiv.org/abs/2608.08285) | N/A |
+| Ego2Robot | 2026 | 18,561 h / 15 robot morphologies | Ego-to-robot data synthesis, VLA pretraining | [Paper](https://arxiv.org/abs/2608.02580) | [Site](https://www-ye.github.io/ego2robot_blog/) |
+| ACE-Data-0 | 2026 | 150 h / 75K episodes / 200 tasks | Multimodal embodied pretraining | [Paper](https://arxiv.org/abs/2607.28625) | [Site](https://ace-data-engine.github.io/ACE-Data-0/) |
+| EgoPlay | 2026 | 106K event-triggered clip-prompt pairs | Event-triggered ego video editing | [Paper](https://arxiv.org/abs/2607.24560) | N/A |
+| Open-AoE | 2026 | ~2,000 h / 500+ contributors | Manipulation pretraining, data toolchain | [Paper](https://arxiv.org/abs/2607.14183) | [GitHub](https://github.com/ant-research/Open-AoE) |
 | EgoVid-Pro | 2026 | 103K clips / ~12M frames | Hand-controlled ego video generation | [Paper](https://arxiv.org/abs/2607.02075) | N/A |
 | RetailSMV | 2026 | 32,105 clips / 16.1K ego + 16.0K exo | Retail world-model adaptation | [Paper](https://arxiv.org/abs/2607.00310) | [Site](https://dreamvu.ai/retailsmv/) |
 | EgoCS-400K | 2026 | 400K+ videos / 10K h gameplay | Action-conditioned world models | [Paper](https://arxiv.org/abs/2606.18180) | N/A |
@@ -94,6 +104,27 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 - [⭐️] **Ropedia Xperience-10M** (2026) — 10M multimodal experiences with 6 RGB streams, stereo depth, pose/SLAM, hand-body mocap, audio, and IMU for large-scale ego pretraining.
   [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://ropedia.com/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/Ropedia/HOMIE-toolkit) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/ropedia-ai/xperience-10m)
+
+- **WorldRover-10M** (2026) — 6,003 synthetic exploration sequences from 32 environments (21.9M frames / 202.7 h, including 10.8M first-person frames) with first-person, third-person, and 360° views aligned to metric depth, trajectories, geometry, and action signals.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.15659-b31b1b.svg)](https://arxiv.org/abs/2608.15659)
+
+- **H2R-Bench** (2026) — Cross-embodiment benchmark for transforming egocentric human demonstrations into robot manipulation videos, evaluated across six manipulation families, two target embodiments, and five dimensions covering execution, contact, embodiment, and visual quality.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.13049-b31b1b.svg)](https://arxiv.org/abs/2608.13049)
+
+- **Ego-OSCAR-550h** (2026) — ~550 h per camera (1,462 stereo sessions) of calibrated everyday egocentric video with synchronized IMU, dense open-vocabulary action captions, per-frame 3D hand reconstructions, and an open sub-$200 capture stack.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.08285-b31b1b.svg)](https://arxiv.org/abs/2608.08285)
+
+- **Ego2Robot** (2026) — 18,561 h of synthetic robot training data across 15 morphologies, generated from curated and in-the-wild egocentric manipulation video through action retargeting, robot-arm compositing, and multi-level quality curation.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.02580-b31b1b.svg)](https://arxiv.org/abs/2608.02580) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://www-ye.github.io/ego2robot_blog/)
+
+- **ACE-Data-0** (2026) — 150 h and 75K interaction episodes across 200 household task categories, synchronizing ego/exo video, full-body and hand motion, object state, audio, and tactile signals at table and room scale.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.28625-b31b1b.svg)](https://arxiv.org/abs/2607.28625) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://ace-data-engine.github.io/ACE-Data-0/) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/ACERobotics/ACE-Data-0)
+
+- **EgoPlay** (2026) — 106K event-triggered egocentric clip-prompt pairs, primarily derived from Ego4D, covering positive, fabricated-negative, and multi-event triggers for temporally restrained video editing and streaming evaluation.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.24560-b31b1b.svg)](https://arxiv.org/abs/2607.24560)
+
+- **Open-AoE** (2026) — ~2,000 h of smartphone-collected manipulation video from 500+ contributors with bilingual text, MANO hand pose, camera trajectory, and atomic-action annotations, plus capture-to-training tools for VLA and world-model research.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.14183-b31b1b.svg)](https://arxiv.org/abs/2607.14183) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/ant-research/Open-AoE) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/inclusionAI/OpenAoE-2000h)
 
 - **EgoVid-Pro** (2026) — 103K in-the-wild egocentric clips (~12M frames) with clean protagonist-only 3D hand trajectories, curated for HandsOnWorld and Plucker Hand Map conditioning in hand-controlled first-person video generation.
   [![arXiv](https://img.shields.io/badge/arXiv-2607.02075-b31b1b.svg)](https://arxiv.org/abs/2607.02075)
@@ -123,14 +154,18 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
   [![arXiv](https://img.shields.io/badge/arXiv-2605.05945-b31b1b.svg)](https://arxiv.org/abs/2605.05945)
 
 - **EgoEdit** (2025) — 100K editing pairs; Egocentric video editing.
-  [![arXiv](https://img.shields.io/badge/arXiv-2512.06065-b31b1b.svg)](https://arxiv.org/abs/2512.06065) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2512.06065)
+  [![arXiv](https://img.shields.io/badge/arXiv-2512.06065-b31b1b.svg)](https://arxiv.org/abs/2512.06065) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://snap-research.github.io/EgoEdit)
 
 - **EgoVid-5M** (2024) — 5M first-person clips curated for text-and-motion-conditioned video generation from wearable footage.
-  [![arXiv](https://img.shields.io/badge/arXiv-2411.08380-b31b1b.svg)](https://arxiv.org/abs/2411.08380) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2411.08380) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/JeffWang987/EgoVid)
+  [![arXiv](https://img.shields.io/badge/arXiv-2411.08380-b31b1b.svg)](https://arxiv.org/abs/2411.08380) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://egovid.github.io/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/JeffWang987/EgoVid)
 ### Benchmarks built on these datasets
 
 | Benchmark | Capability | Primary data | Official link | Notes |
 |-----------|------------|--------------|---------------|-------|
+| H2R-Bench | Cross-embodiment human-to-robot manipulation video generation | H2R-Bench | [Paper](https://arxiv.org/abs/2608.13049) | Standalone |
+| EgoPlay | Event-triggered editing, pre-trigger preservation, false-trigger robustness | EgoPlay / Ego4D | [Paper](https://arxiv.org/abs/2607.24560) | Dataset+benchmark |
+| ACE-Data-0 | Hierarchical signals-to-scenes-to-interactions evaluation | ACE-Data-0 | [Site](https://ace-data-engine.github.io/ACE-Data-0/) | Dataset+benchmark |
+| Ego2Robot / RoboTwin2.0 extension | OOD visual, spatial, embodiment, and semantic generalization | Ego2Robot | [Site](https://www-ye.github.io/ego2robot_blog/) | Dataset+benchmark |
 | HandsOnWorld / EgoVid-Pro | Camera-disentangled hand-controlled egocentric video generation | EgoVid-Pro | [Paper](https://arxiv.org/abs/2607.02075) | Dataset+benchmark |
 | RetailSMV | Retail video-world-model adaptation and ego/exo viewpoint ablations | RetailSMV | [Site](https://dreamvu.ai/retailsmv/) | Dataset+benchmark |
 | EgoCS-400K | Action-conditioned future prediction, state/event-aware rollout, replay-grounded captioning | EgoCS-400K | [Paper](https://arxiv.org/abs/2606.18180) | Dataset+benchmark |
@@ -147,6 +182,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |------|------|-------|-----------|-------|------|
 | ⭐ EgoLife | 2025 | ~266–300 h daily life | Long-form assistants, memory | [Paper](https://arxiv.org/abs/2503.03803) | [Site](https://egolife-ai.github.io/) |
 | ⭐ EgoSchema | 2023 | 250+ h / 5K QA | Long-form video QA | [Paper](https://arxiv.org/abs/2308.09126) | [Site](https://egoschema.github.io/) |
+| EgoMonth | 2026 | 301 h / 738 clips / 1,443 QA | Month-level spatiotemporal memory | [Paper](https://arxiv.org/abs/2608.13113) | [HF](https://huggingface.co/datasets/anonymous-egomonth/egomonth-dataset) |
+| MEMORA-Bench | 2026 | 45 h / 18 participants | Embodied action memory, planning | [Paper](https://arxiv.org/abs/2607.14252) | N/A |
+| EgoServe | 2026 | 3K+ service instances / 4 horizons | Proactive continuous-video assistance | [Paper](https://arxiv.org/abs/2607.11523) | [Site](https://sitonggong.github.io/EgoServe-page/) |
 | SuperMemory-VQA | 2026 | 52.9 h / 4,853 QA | Long-horizon memory VQA | [Paper](https://arxiv.org/abs/2606.00825) | [HF](https://huggingface.co/datasets/OSU-AIoT-MLSys-Lab/SuperMemory-VQA) |
 | EgoMemReason | 2026 | 500 MCQs over EgoLife | Week-long memory reasoning | [Paper](https://arxiv.org/abs/2605.09874) | [HF](https://huggingface.co/datasets/Ted412/EgoMemReason) |
 | EgoExoMem | 2026 | 2.6K MCQs / 390 videos | Cross-view memory reasoning | [Paper](https://arxiv.org/abs/2605.18734) | [GitHub](https://github.com/RuipingL/EgoExoMem) |
@@ -156,7 +194,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | VidChapters-7M | 2023 | 817K videos / 7M chapters | Chaptering (not ego-only) | [Paper](https://arxiv.org/abs/2309.13952) | [Site](https://antoyang.github.io/vidchapters.html) |
 | Multi-Ego | 2022 | ~12 h / 41 seq. | Multi-wearer, summarization | [Paper](https://openaccess.thecvf.com/content/WACV2022/html/Elfeki_Multi-Stream_Dynamic_Video_Summarization_WACV_2022_paper.html) | [GitHub](https://github.com/M-Elfeki/Multi-DPP) |
 | DoMSEV | 2018 | 80 h, 48 seq. | Semantic fast-forward, first-person video | [Paper](https://openaccess.thecvf.com/content_cvpr_2018/html/Silva_A_Weighted_Sparse_CVPR_2018_paper.html) | [Site](https://www.verlab.dcc.ufmg.br/semantic-hyperlapse/cvpr2018-dataset/) |
-| HUJI-EgoSeg | 2014 | 29 long egocentric videos (~1–5 h each), pixel-level temporal segmentation annotations | memory, summarization & long-form understanding | [Paper](https://openaccess.thecvf.com/content_cvpr_2014/html/Poleg_Temporal_Segmentation_of_2014_CVPR_paper.html) | [Site](http://www.cs.huji.ac.il/~yedMDpid/egoseg/) |
+| HUJI-EgoSeg | 2014 | 29 long egocentric videos (~1–5 h each), pixel-level temporal segmentation annotations | memory, summarization & long-form understanding | [Paper](https://openaccess.thecvf.com/content_cvpr_2014/html/Poleg_Temporal_Segmentation_of_2014_CVPR_paper.html) | [Site](https://vision.huji.ac.il/egoseg/) |
 | UT Ego | 2012 | ~17 h, 4 long videos | Summarization, long-form ego | [Paper](https://doi.org/10.1109/CVPR.2012.6247820) | [Site](http://vision.cs.utexas.edu/projects/egocentric_data/UT_Egocentric_Dataset.html) |
 | VINST / Visual Diaries | 2011 | 31 egocentric videos capturing daily commutes; used for temporal segmentation and video summarization | memory, summarization & long-form understanding | [Paper](https://doi.org/10.1109/CVPR.2011.5995731) | [Site](https://www.csc.kth.se/cvap/vinst/NovEgoMotion.html) |
 ### Entries
@@ -165,7 +203,16 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
   [![arXiv](https://img.shields.io/badge/arXiv-2503.03803-b31b1b.svg)](https://arxiv.org/abs/2503.03803) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://egolife-ai.github.io/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/EvolvingLMMs-Lab/EgoLife) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/lmms-lab/EgoLife)
 
 - [⭐️] **EgoSchema** (2023) — 250+ h of long-form Ego4D video with 5K QA pairs designed to probe memory and causal understanding over extended clips.
-  [![arXiv](https://img.shields.io/badge/arXiv-2308.09126-b31b1b.svg)](https://arxiv.org/abs/2308.09126) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2308.09126) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/egoschema/EgoSchema)
+  [![arXiv](https://img.shields.io/badge/arXiv-2308.09126-b31b1b.svg)](https://arxiv.org/abs/2308.09126) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://egoschema.github.io/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/egoschema/EgoSchema)
+
+- **EgoMonth** (2026) — 301 h across 738 wearable-camera clips from 20 participants recorded over 20–120 days, paired with 1,443 human-authored questions spanning schema consolidation, episodic indexing, and cascading reasoning.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.13113-b31b1b.svg)](https://arxiv.org/abs/2608.13113) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/anonymous-egomonth/egomonth-dataset)
+
+- **MEMORA-Bench** (2026) — 45 h of EPIC-KITCHENS-100 extension video from 18 participants for memory-grounded planning toward seen and unseen goals, plus structured assessment of environment, entity, activity, and inferred-knowledge memory.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.14252-b31b1b.svg)](https://arxiv.org/abs/2607.14252)
+
+- **EgoServe** (2026) — 3K+ manually verified proactive-service instances over EgoLife, HoloAssist, and CaptainCook4D, organized into 10 assistance categories and four temporal horizons from instant alerts to multi-day habit coaching.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.11523-b31b1b.svg)](https://arxiv.org/abs/2607.11523) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://sitonggong.github.io/EgoServe-page/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/SitongGong/EgoMemo) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/SitongGong/EgoServe)
 
 - **SuperMemory-VQA** (2026) — 52.9 h of everyday Meta Aria recordings with RGB, processed gaze, IMU, SLAM trajectories, point clouds, redacted transcripts, and 4,853 human-verified long-horizon memory QA pairs.
   [![arXiv](https://img.shields.io/badge/arXiv-2606.00825-b31b1b.svg)](https://arxiv.org/abs/2606.00825) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/OSU-AIoT-MLSys-Lab/SuperMemory-VQA)
@@ -195,7 +242,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content_cvpr_2018/html/Silva_A_Weighted_Sparse_CVPR_2018_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://www.verlab.dcc.ufmg.br/semantic-hyperlapse/cvpr2018-dataset/)
 
 - **HUJI-EgoSeg** (2014) — 29 long egocentric videos (~1–5 h each), pixel-level temporal segmentation annotations; memory, summarization & long-form understanding.
-  [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content_cvpr_2014/html/Poleg_Temporal_Segmentation_of_2014_CVPR_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](http://www.cs.huji.ac.il/~yedMDpid/egoseg/)
+  [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content_cvpr_2014/html/Poleg_Temporal_Segmentation_of_2014_CVPR_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://vision.huji.ac.il/egoseg/)
 
 - **UT Ego** (2012) — ~17 h, 4 long videos; Summarization, long-form ego.
   [![Paper](https://img.shields.io/badge/Paper-DOI-b31b1b.svg)](https://doi.org/10.1109/CVPR.2012.6247820) [![Project](https://img.shields.io/badge/Project-Link-blue.svg)](http://vision.cs.utexas.edu/projects/egocentric_data/UT_Egocentric_Dataset.html)
@@ -206,6 +253,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Benchmark | Capability | Primary data | Official link | Notes |
 |-----------|------------|--------------|---------------|-------|
+| EgoMonth | Month-level schema, episodic, spatial, and cross-day memory reasoning | EgoMonth | [HF](https://huggingface.co/datasets/anonymous-egomonth/egomonth-dataset) | Dataset+benchmark |
+| MEMORA-Bench | Embodied action memory formation, consolidation, retrieval, and planning | EPIC-KITCHENS-100 extension | [Paper](https://arxiv.org/abs/2607.14252) | Standalone |
+| EgoServe | Proactive assistance over instant, short-term, episodic, and long-term context | EgoLife / HoloAssist / CaptainCook4D | [Site](https://sitonggong.github.io/EgoServe-page/) | Standalone |
 | SuperMemory-VQA | Long-horizon egocentric memory VQA with answerability checks | SuperMemory-VQA | [HF](https://huggingface.co/datasets/OSU-AIoT-MLSys-Lab/SuperMemory-VQA) | Dataset+benchmark |
 | EgoMemReason | Week-long entity, event, and behavior memory reasoning | EgoLife | [HF](https://huggingface.co/datasets/Ted412/EgoMemReason) | Standalone |
 | EgoExoMem | Cross-view memory reasoning over synchronized ego-exo videos | EgoExo4D / LEMMA | [GitHub](https://github.com/RuipingL/EgoExoMem) | Standalone |
@@ -224,6 +274,11 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |------|------|-------|-----------|-------|------|
 | ⭐ HD-EPIC | 2025 | ~41 h / dense labels | Fine-grained kitchen, VQA | [Paper](https://arxiv.org/abs/2502.04144) | [Site](https://hd-epic.github.io/) |
 | ⭐ EgoClip | 2022 | 3.8M clip–text pairs | Video-language pretraining | [Paper](https://arxiv.org/abs/2206.01670) | [GitHub](https://github.com/showlab/EgoVLP) |
+| CrossView | 2026 | ~6K questions / 4 domains | Multi-camera video QA | [Paper](https://arxiv.org/abs/2608.15539) | [Site](https://utaustin-swarmlab.github.io/CrossView/) |
+| EgoCross | 2026 | 798 clips / 957 QA | Cross-domain egocentric VideoQA | [Paper](https://arxiv.org/abs/2608.04589) | [Site](https://egocross-benchmark.github.io/) |
+| HumanCLAW-Bench | 2026 | 1,218 episodes / 41 scenes | Closed-loop embodied action intelligence | [Paper](https://arxiv.org/abs/2607.27180) | [Site](https://human-claw.github.io/) |
+| EgoSafe-Bench | 2026 | 3K clips / 12K evaluation samples | Visual safety, forensic reasoning | [Paper](https://arxiv.org/abs/2607.26518) | N/A |
+| VIABench | 2026 | 761 videos / 46.9 h / 14.5K annotations | Visual-impairment assistance | [Paper](https://arxiv.org/abs/2607.14660) | [GitHub](https://github.com/MCG-NJU/VIABench) |
 | LongEgoRefer | 2026 | 1,498 refs / avg. 45 min | Long-form video REC, grounding | [Paper](https://arxiv.org/abs/2607.02096) | [GitHub](https://github.com/shunya-kato/LongEgoRefer) |
 | EgoGapBench | 2026 | 1,000 action-selection items | Egocentric action selection | [Paper](https://arxiv.org/abs/2607.00547) | [GitHub](https://github.com/jhCOR/EgoGapBench) |
 | EgoSafetyBench | 2026 | 1,200 robot-view scenarios | Streaming safety guards | [Paper](https://arxiv.org/abs/2607.00218) | N/A |
@@ -250,10 +305,25 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 ### Entries
 
 - [⭐️] **HD-EPIC** (2025) — ~41 h of densely labeled cooking video with recipe steps, audio events, gaze, 3D grounding, and VQA supervision.
-  [![arXiv](https://img.shields.io/badge/arXiv-2502.04144-b31b1b.svg)](https://arxiv.org/abs/2502.04144) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2502.04144) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/hd-epic/hd-epic-annotations)
+  [![arXiv](https://img.shields.io/badge/arXiv-2502.04144-b31b1b.svg)](https://arxiv.org/abs/2502.04144) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://hd-epic.github.io/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/hd-epic/hd-epic-annotations)
 
 - [⭐️] **EgoClip** (2022) — 3.8M clip–text pairs; Video-language pretraining.
   [![arXiv](https://img.shields.io/badge/arXiv-2206.01670-b31b1b.svg)](https://arxiv.org/abs/2206.01670) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/showlab/EgoVLP)
+
+- **CrossView** (2026) — ~6K multi-camera video questions across autonomous driving, surveillance, ego/exo activity, and robotics, including 4–7 synchronized Ego-Exo4D cameras per egocentric question.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.15539-b31b1b.svg)](https://arxiv.org/abs/2608.15539) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://utaustin-swarmlab.github.io/CrossView/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/UTAustin-SwarmLab/CrossView) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/SWARM-Lab/CrossView)
+
+- **EgoCross** (2026) — 798 clips and 957 human-verified QA pairs across surgery, industrial assembly, extreme sports, and animal perspectives, designed to test cross-domain generalization beyond daily-life egocentric video.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.04589-b31b1b.svg)](https://arxiv.org/abs/2608.04589) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://egocross-benchmark.github.io/) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/myuniverse/EgoCross)
+
+- **HumanCLAW-Bench** (2026) — 1,218 long-horizon find–navigate–interact episodes across 41 simulated indoor scenes for evaluating whether VLMs can select and sequence actions from a continuously updated egocentric body view.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.27180-b31b1b.svg)](https://arxiv.org/abs/2607.27180) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://human-claw.github.io/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/Human-CLAW/HumanCLAW)
+
+- **EgoSafe-Bench** (2026) — 12K evaluation samples formed from 3K mobile-captured first-person clips and hierarchical QA chains for feature anchoring, blind-spot deduction, intent inference, and logically consistent visual-safety reasoning.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.26518-b31b1b.svg)](https://arxiv.org/abs/2607.26518)
+
+- **VIABench** (2026) — 761 first-person videos (46.9 h) recorded or shared by blind individuals with 14,526 curated annotations for proactive reminders, visual question answering, and vision-guided interaction in online and offline settings.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.14660-b31b1b.svg)](https://arxiv.org/abs/2607.14660) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/MCG-NJU/VIABench)
 
 - **LongEgoRefer** (2026) — 1,498 referring expressions over long-form Ego4D videos averaging 45 minutes, requiring temporal and spatial localization of sparse referred objects in untrimmed egocentric recordings.
   [![arXiv](https://img.shields.io/badge/arXiv-2607.02096-b31b1b.svg)](https://arxiv.org/abs/2607.02096) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/shunya-kato/LongEgoRefer)
@@ -313,7 +383,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
   [![arXiv](https://img.shields.io/badge/arXiv-2508.11192-b31b1b.svg)](https://arxiv.org/abs/2508.11192) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2508.11192) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/google/howtodiv)
 
 - **InterVLA** (2025) — 11.4 h interactions; Instruction, ego–exo mocap.
-  [![arXiv](https://img.shields.io/badge/arXiv-2508.04681-b31b1b.svg)](https://arxiv.org/abs/2508.04681) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2508.04681)
+  [![arXiv](https://img.shields.io/badge/arXiv-2508.04681-b31b1b.svg)](https://arxiv.org/abs/2508.04681) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://liangxuy.github.io/InterVLA/)
 
 - **AssistQ** (2022) — 100 long videos / 529 QA; Instructional QA.
   [![arXiv](https://img.shields.io/badge/arXiv-2203.04203-b31b1b.svg)](https://arxiv.org/abs/2203.04203) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/showlab/AssistQ)
@@ -329,6 +399,11 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Benchmark | Capability | Primary data | Official link | Notes |
 |-----------|------------|--------------|---------------|-------|
+| CrossView | Multi-camera evidence integration across four domains | Ego-Exo4D / nuScenes / MEVA / AgiBot | [Site](https://utaustin-swarmlab.github.io/CrossView/) | Standalone |
+| EgoCross | Cross-domain egocentric VideoQA in surgery, industry, sports, and animal views | EgoCross | [Site](https://egocross-benchmark.github.io/) | Dataset+challenge |
+| HumanCLAW-Bench | Closed-loop find–navigate–interact action intelligence | HSSD simulated scenes | [Site](https://human-claw.github.io/) | Standalone |
+| EgoSafe-Bench | Hierarchical visual-safety and forensic reasoning | EgoSafe-Bench | [Paper](https://arxiv.org/abs/2607.26518) | Dataset+benchmark |
+| VIABench | Proactive reminder, VQA, and vision-guided assistance | VIABench | [GitHub](https://github.com/MCG-NJU/VIABench) | Dataset+benchmark |
 | LongEgoRefer | Long-form egocentric spatiotemporal referring expression comprehension | Ego4D | [GitHub](https://github.com/shunya-kato/LongEgoRefer) | Standalone |
 | EgoGapBench | Egocentric action selection in multi-agent scenes | EgoGapBench | [GitHub](https://github.com/jhCOR/EgoGapBench) | Standalone |
 | EgoSafetyBench | Runtime safety-guard evaluation over egocentric robot-view video | EgoSafetyBench | [Paper](https://arxiv.org/abs/2607.00218) | Standalone |
@@ -366,18 +441,22 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |------|------|-------|-----------|-------|------|
 | ⭐ Ego4D | 2022 | ~3,670 h | AR, VQA, forecasting, many | [Paper](https://arxiv.org/abs/2110.07058) | [Site](https://ego4d-data.org/) |
 | ⭐ EPIC-KITCHENS-100 | 2021 | 100 h / 90K segments | Action recognition, many | [Paper](https://link.springer.com/article/10.1007/s11263-021-01531-2) | [Site](https://epic-kitchens.github.io/) |
+| HUI360 | 2026 | 71 h captured / 11 h filtered / 1M annotations | Human-robot interaction anticipation | [Paper](https://arxiv.org/abs/2608.11051) | [Site](https://hucebot.github.io/hui360/) |
+| EventKitchen | 2026 | 5.5 h / 10.8K action segments | Event-based action recognition, detection | [Paper](https://arxiv.org/abs/2608.04865) | [Site](https://chengmingf.github.io/EventKitchen.github.io/) |
+| InterPet4D | 2026 | 6.8M frames / 13 dogs / 23 people | Human-pet interaction, motion generation | [Paper](https://arxiv.org/abs/2607.10287) | [Site](https://interactive-intelligence-lab.github.io/InterPet4D-Homepage/) |
+| EgoPolice | 2026 | 180+ h / 9 action classes | Body-camera action recognition, VideoQA | [Paper](https://arxiv.org/abs/2607.06468) | [GitHub](https://github.com/princetonvisualai/egopolice) |
 | ChildLens | 2026 | 108.58 h / 354 videos | Child activity analysis | [Paper](https://link.springer.com/article/10.3758/s13428-026-02982-6) | [Data](https://doi.org/10.17617/4.fe) |
 | EgoScale | 2026 | 20k+ h labeled manipulation (paper) | Action, dexterous transfer | [Paper](https://arxiv.org/abs/2602.16710) | N/A |
 | CogDrive (EyeCue) | 2026 | Multi-scenario driving clips | Driver cognitive-distraction detection, gaze + ego | [Paper](https://arxiv.org/abs/2605.07859) | N/A |
 | Ego-METAS | 2026 | 100+ h / 5 modalities | Online action segmentation, sensor routing | [Paper](https://arxiv.org/abs/2606.02246) | [HF](https://huggingface.co/datasets/Ego-METAS/Ego-METAS) |
 | Furhat Egocentric Dataset | 2026 | 20 seq. / ~25 min | Robot-ego face/body tracking, re-ID | [Paper](https://arxiv.org/abs/2606.03694) | N/A |
-| World In Your Hands | 2025 | 1000+ h labeled manipulation (paper) | Action, dexterous transfer, VLA training | [Paper](https://arxiv.org/abs/2512.24310) | [Github](https://github.com/tars-robotics/World-In-Your-Hands) |
+| World In Your Hands | 2025 | 1000+ h labeled manipulation (paper) | Action, dexterous transfer, VLA training | [Paper](https://arxiv.org/abs/2512.24310) | [GitHub](https://github.com/tars-robotics/World-In-Your-Hands) |
 | EgoCampus | 2025 | ~32 h / campus paths (paper) | Gaze, pedestrian ego | [Paper](https://arxiv.org/abs/2512.07668) | [GitHub](https://github.com/ComputerVisionRutgers/EgoCampus) |
 | AEA | 2024 | 143 seq. / ~7.3 h | Everyday activities, Aria | [Paper](https://arxiv.org/abs/2402.13349) | [Site](https://www.projectaria.com/datasets/aea/) |
 | EgoSurgery (Phase / Tool / HTS) | 2024 | Open-surgery ego video | Phase, tools, segmentation | [Phase](https://arxiv.org/abs/2405.19644) / [Tool](https://arxiv.org/abs/2406.03095) / [HTS](https://arxiv.org/abs/2503.18755) | [GitHub](https://github.com/Fujiry0/EgoSurgery) |
 | EgoExo-Fitness | 2024 | 32 h / 1,276 seq. | Full-body action, quality assessment | [Paper](https://arxiv.org/abs/2406.08877) | [GitHub](https://github.com/iSEE-Laboratory/EgoExo-Fitness) |
 | E³ (Exploring Embodied Emotion) | 2024 | 50+ h | Emotion, multimodal ego | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/d611d5c0251d9680f869c5d2c46c6fcd-Abstract-Datasets_and_Benchmarks_Track.html) | [GitHub](https://github.com/Exploring-Embodied-Emotion-official/E3) |
-| EGOFALLS | 2023 | Fall samples / AV | Fall detection | [Paper](https://arxiv.org/abs/2309.04579) | [Site](https://www.dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/HO5GE3) |
+| EGOFALLS | 2023 | Fall samples / AV | Fall detection | [Paper](https://arxiv.org/abs/2309.04579) | [Site](https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/HO5GE3) |
 | Epic-Sounding-Object | 2023 | 3.2K short clips | Audio-visual localization | [Paper](https://openaccess.thecvf.com/content/CVPR2023/html/Huang_Egocentric_Audio-Visual_Object_Localization_CVPR_2023_paper.html) | [GitHub](https://github.com/WikiChao/Ego-AV-Loc) |
 | HoloAssist | 2023 | 169 h | Interactive assistants | [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Wang_HoloAssist_an_Egocentric_Human_Interaction_Dataset_for_Interactive_AI_Assistants_ICCV_2023_paper.html) | [Site](https://holoassist.github.io/) |
 | WEAR | 2023 | ~19 h outdoor sports | Activity + IMU | [Paper](https://arxiv.org/abs/2304.05088) | [Site](https://mariusbock.github.io/wear/) |
@@ -402,10 +481,22 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 ### Entries
 
 - [⭐️] **Ego4D** (2022) — ~3,670 h; AR, VQA, forecasting, many.
-  [![arXiv](https://img.shields.io/badge/arXiv-2110.07058-b31b1b.svg)](https://arxiv.org/abs/2110.07058) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2110.07058) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/facebookresearch/Ego4d)
+  [![arXiv](https://img.shields.io/badge/arXiv-2110.07058-b31b1b.svg)](https://arxiv.org/abs/2110.07058) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://ego4d-data.org/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/facebookresearch/Ego4d)
 
 - [⭐️] **EPIC-KITCHENS-100** (2021) — 100 h of unscripted kitchen activity with 90K segments; the canonical egocentric action-recognition and anticipation benchmark.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://link.springer.com/article/10.1007/s11263-021-01531-2) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://epic-kitchens.github.io/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/epic-kitchens/epic-kitchens-100-annotations)
+
+- **HUI360** (2026) — 71 h of in-the-wild 360° robot-egocentric capture (11 h retained for the benchmark) with more than 1M curated pose, face-keypoint, mask, tracking, and interaction annotations for human-robot interaction anticipation.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.11051-b31b1b.svg)](https://arxiv.org/abs/2608.11051) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://hucebot.github.io/hui360/)
+
+- **EventKitchen** (2026) — 5.5 h of unscripted cooking from 10 participants in 13 kitchens, captured with stereo event cameras plus synchronized RGB, depth, and IMU and annotated with 10,762 action segments and 13,482 object boxes.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.04865-b31b1b.svg)](https://arxiv.org/abs/2608.04865) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://chengmingf.github.io/EventKitchen.github.io/)
+
+- **InterPet4D** (2026) — 6.8M synchronized multi-view and egocentric frames from 13 dogs of 11 breeds interacting with 23 people, with audio, segmentation, 2D/3D keypoints, and human, hand, and pet meshes.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.10287-b31b1b.svg)](https://arxiv.org/abs/2607.10287) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://interactive-intelligence-lab.github.io/InterPet4D-Homepage/) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/ohicarip/interpet4d)
+
+- **EgoPolice** (2026) — 180+ h of real police body-worn camera footage with second-by-second annotations for nine high-stakes police/civilian action classes, classification folds, and multiple-choice VideoQA.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.06468-b31b1b.svg)](https://arxiv.org/abs/2607.06468) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/princetonvisualai/egopolice)
 
 - **ChildLens** (2026) — 108.58 h of child-worn egocentric video and audio from 62 children for activity analysis in everyday home behavior.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://link.springer.com/article/10.3758/s13428-026-02982-6) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://www.eva.mpg.de/comparative-cultural-psychology/technical-development/childlens/) [![Data](https://img.shields.io/badge/Data-DOI-blue.svg)](https://doi.org/10.17617/4.fe)
@@ -422,11 +513,14 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 - **Furhat Egocentric Dataset** (2026) — 20 sequences (~25 min) of close-range multi-party interactions captured from a Furhat social robot's egocentric camera with amodal face/body boxes and consistent identities for multi-person tracking and re-identification in HRI; available on request under a Data Usage Agreement.
   [![arXiv](https://img.shields.io/badge/arXiv-2606.03694-b31b1b.svg)](https://arxiv.org/abs/2606.03694)
 
+- **World In Your Hands** (2025) — 1000+ h of labeled human manipulation data with video-language annotations for action understanding, dexterous transfer, and VLA training.
+  [![arXiv](https://img.shields.io/badge/arXiv-2512.24310-b31b1b.svg)](https://arxiv.org/abs/2512.24310) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://wiyh.tars-ai.com/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/tars-robotics/World-In-Your-Hands)
+
 - **EgoCampus** (2025) — ~32 h / campus paths (paper); Gaze, pedestrian ego.
   [![arXiv](https://img.shields.io/badge/arXiv-2512.07668-b31b1b.svg)](https://arxiv.org/abs/2512.07668) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2512.07668) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/ComputerVisionRutgers/EgoCampus)
 
 - **AEA** (2024) — 143 seq. / ~7.3 h; Everyday activities, Aria.
-  [![arXiv](https://img.shields.io/badge/arXiv-2402.13349-b31b1b.svg)](https://arxiv.org/abs/2402.13349) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2402.13349) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/projectaria/aria-everyday-activities)
+  [![arXiv](https://img.shields.io/badge/arXiv-2402.13349-b31b1b.svg)](https://arxiv.org/abs/2402.13349) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://www.projectaria.com/datasets/aea/) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/projectaria/aria-everyday-activities)
 
 - **EgoSurgery (Phase / Tool / HTS)** (2024) — Open-surgery ego video with companion phase, tool, and hand-tool segmentation releases for phase recognition, instrument analysis, and dense surgical interaction understanding.
   [![arXiv](https://img.shields.io/badge/arXiv-2405.19644-b31b1b.svg)](https://arxiv.org/abs/2405.19644) [![arXiv](https://img.shields.io/badge/arXiv-2406.03095-b31b1b.svg)](https://arxiv.org/abs/2406.03095) [![arXiv](https://img.shields.io/badge/arXiv-2503.18755-b31b1b.svg)](https://arxiv.org/abs/2503.18755) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/Fujiry0/EgoSurgery)
@@ -438,13 +532,13 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
   [![Paper](https://img.shields.io/badge/Paper-NeurIPS24-b31b1b.svg)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/d611d5c0251d9680f869c5d2c46c6fcd-Abstract-Datasets_and_Benchmarks_Track.html) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/Exploring-Embodied-Emotion-official/E3)
 
 - **EGOFALLS** (2023) — Fall samples / AV; Fall detection.
-  [![arXiv](https://img.shields.io/badge/arXiv-2309.04579-b31b1b.svg)](https://arxiv.org/abs/2309.04579) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://www.dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/HO5GE3)
+  [![arXiv](https://img.shields.io/badge/arXiv-2309.04579-b31b1b.svg)](https://arxiv.org/abs/2309.04579) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/HO5GE3)
 
 - **Epic-Sounding-Object** (2023) — 3.2K short clips; Audio-visual localization.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2023/html/Huang_Egocentric_Audio-Visual_Object_Localization_CVPR_2023_paper.html) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/WikiChao/Ego-AV-Loc)
 
 - **HoloAssist** (2023) — 169 h; Interactive assistants.
-  [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/ICCV2023/html/Wang_HoloAssist_an_Egocentric_Human_Interaction_Dataset_for_Interactive_AI_Assistants_ICCV_2023_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://openaccess.thecvf.com/content/ICCV2023/html/Wang_HoloAssist_an_Egocentric_Human_Interaction_Dataset_for_Interactive_AI_Assistants_ICCV_2023_paper.html) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/Ember-HoloAssist/holoassist-release)
+  [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/ICCV2023/html/Wang_HoloAssist_an_Egocentric_Human_Interaction_Dataset_for_Interactive_AI_Assistants_ICCV_2023_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://holoassist.github.io/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/Ember-HoloAssist/holoassist-release)
 
 - **WEAR** (2023) — ~19 h outdoor sports; Activity + IMU.
   [![arXiv](https://img.shields.io/badge/arXiv-2304.05088-b31b1b.svg)](https://arxiv.org/abs/2304.05088) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://mariusbock.github.io/wear/)
@@ -456,7 +550,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
   [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://egodeliver.github.io/EgoDeliver_Dataset/)
 
 - **HOMAGE** (2021) — 30 h / compositional; Home activities.
-  [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2021/html/Rai_Home_Action_Genome_Cooperative_Compositional_Action_Understanding_CVPR_2021_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://openaccess.thecvf.com/content/CVPR2021/html/Rai_Home_Action_Genome_Cooperative_Compositional_Action_Understanding_CVPR_2021_paper.html) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/nishantrai18/homage)
+  [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2021/html/Rai_Home_Action_Genome_Cooperative_Compositional_Action_Understanding_CVPR_2021_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://homeactiongenome.org/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/nishantrai18/homage)
 
 - **MECCANO** (2021) — ~55 h industrial; HOI, ego.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/WACV2021/html/Ragusa_The_MECCANO_Dataset_Understanding_Human-Object_Interactions_From_Egocentric_Videos_in_WACV_2021_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://iplab.dmi.unict.it/MECCANO/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/fpv-iplab/MECCANO)
@@ -471,7 +565,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
   [![arXiv](https://img.shields.io/badge/arXiv-2007.15781-b31b1b.svg)](https://arxiv.org/abs/2007.15781) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://sites.google.com/view/lemma-activity) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/Buzz-Beater/LEMMA)
 
 - **Charades-Ego** (2018) — Paired ego / exo; Alignment, actions.
-  [![arXiv](https://img.shields.io/badge/arXiv-1804.09626-b31b1b.svg)](https://arxiv.org/abs/1804.09626) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/1804.09626)
+  [![arXiv](https://img.shields.io/badge/arXiv-1804.09626-b31b1b.svg)](https://arxiv.org/abs/1804.09626) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://prior.allenai.org/projects/charades-ego)
 
 - **EGTEA Gaze+** (2018) — 28 h cooking; Gaze + action recognition.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content_ECCV_2018/html/Yin_Li_In_the_Eye_ECCV_2018_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://cbs.ic.gatech.edu/fpv/)
@@ -503,17 +597,18 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 - **EgoAction** (2011) — First-person sports videos (skateboarding, skiing, cycling, etc; action & activity recognition.
   [![Paper](https://img.shields.io/badge/Paper-DOI-b31b1b.svg)](https://doi.org/10.1109/CVPR.2011.5995406)
 
-  **World In Your Hands** (2025) - 1000+ h of labeled human manipulation data; Action, Vision-Langauge Annotations; VLA traininig.
-  [![arXiv](https://img.shields.io/badge/arXiv-2512.24310-b31b1b.svg)](https://arxiv.org/abs/2512.24310) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://wiyh.tars-ai.com/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/tars-robotics/World-In-Your-Hands) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/projectaria/aria-everyday-activities)
-
 - *Ego-Exo4D — see [3D Scene Understanding & Localization](#-3d-scene-understanding--localization)*
 - *EgoExoLearn — see [Procedural Activities & Skill Learning](#-procedural-activities--skill-learning)*
 ### Benchmarks built on these datasets
 
 | Benchmark | Capability | Primary data | Official link | Notes |
 |-----------|------------|--------------|---------------|-------|
+| HUI360 | In-the-wild human-robot interaction anticipation and cross-dataset transfer | HUI360 / SSUP-HRI | [Site](https://hucebot.github.io/hui360/) | Dataset+benchmark |
+| EventKitchen | Event-based action recognition, object detection, and stereo depth | EventKitchen | [Site](https://chengmingf.github.io/EventKitchen.github.io/) | Dataset+benchmark |
+| InterPet4D | Multimodal human-pet interaction and pet-motion generation | InterPet4D | [Site](https://interactive-intelligence-lab.github.io/InterPet4D-Homepage/) | Dataset+benchmark |
+| EgoPolice | High-stakes action classification and body-camera VideoQA | EgoPolice | [GitHub](https://github.com/princetonvisualai/egopolice) | Dataset+benchmark |
 | E³ (Exploring Embodied Emotion) | Emotion recognition, classification, localization, reasoning | E³ | [GitHub](https://github.com/Exploring-Embodied-Emotion-official/E3) | Standalone |
-| EGOFALLS | Fall detection (visual + audio) | EGOFALLS | [Dataverse](https://www.dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/HO5GE3) | Standalone |
+| EGOFALLS | Fall detection (visual + audio) | EGOFALLS | [Dataverse](https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/HO5GE3) | Standalone |
 | EgoExo-Fitness | Action localization, cross-view verification, skill determination | EgoExo-Fitness | [GitHub](https://github.com/iSEE-Laboratory/EgoExo-Fitness) | Dataset+benchmark |
 | Ego4D | Action, forecasting, VQA, narration, … | Ego4D | [Site](https://ego4d-data.org/) | Suite |
 | EPIC-KITCHENS-100 | Action recognition, detection, anticipation, … | EPIC-KITCHENS-100 | [Site](https://epic-kitchens.github.io/) | Suite |
@@ -530,6 +625,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |------|------|-------|-----------|-------|------|
 | ⭐ HOI4D | 2022 | 2.4M frames / 4K seq. | 4D HOI | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_HOI4D_A_4D_Egocentric_Dataset_for_Category-Level_Human-Object_Interaction_CVPR_2022_paper.html) | [Site](https://hoi4d.github.io/) |
 | ⭐ EgoDex | 2025 | 829 h / 30K trajectories | Dexterous manipulation, pose | [Paper](https://arxiv.org/abs/2505.11709) | [GitHub](https://github.com/apple/ml-egodex) |
+| EgoAffordance | 2026 | 204K episodes / 17.2M affordances | Visual, grasp, trajectory affordances | [Paper](https://arxiv.org/abs/2608.05215) | [Site](https://ojh6404.github.io/vlaff/) |
 | H-Tac | 2026 | 160 h / 135K episodes | Tactile-action pretraining | [Paper](https://arxiv.org/abs/2607.01067) | N/A |
 | EPIC-Contact | 2026 | 2.3K clips / 62.3K frames | In-the-wild 3D hand-object contact | [Paper](https://arxiv.org/abs/2606.30598) | [Site](https://sid2697.github.io/epic-contact/) |
 | HT-Bench | 2026 | 10M RGB / 7.8M tactile frames | Full-hand tactile representation | [Paper](https://arxiv.org/abs/2606.19161) | N/A |
@@ -559,21 +655,24 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | Touch and Go | 2022 | 12K+ vis–tactile frames | Vision + touch | [Paper](https://arxiv.org/abs/2211.12498) | [Site](https://touch-and-go.github.io/) |
 | VISOR | 2022 | EPIC + masks / relations | Segmentation, HOI | [Paper](https://arxiv.org/abs/2209.13064) | [Site](https://epic-kitchens.github.io/VISOR) |
 | H2O | 2021 | 100K+ frames | Two-hand interaction | [Paper](https://openaccess.thecvf.com/content/ICCV2021/html/Kwon_H2O_Two_Hands_Manipulating_Objects_for_First_Person_Interaction_Recognition_ICCV_2021_paper.html) | [Site](https://h2odataset.ethz.ch/) |
-| TREK-150 | 2021 | 150 EPIC seq. | Object tracking | [Paper](https://arxiv.org/abs/2108.13665) | [Site](https://machinelearning.uniud.it/datasets/trek150/) |
+| TREK-150 | 2021 | 150 EPIC seq. | Object tracking | [Paper](https://arxiv.org/abs/2108.13665) | [Site](http://machinelearning.uniud.it/datasets/trek150/) |
 | You2Me | 2020 | 14 seq., chest-mounted GoPro | Body pose via ego–exo interaction | [Paper](https://openaccess.thecvf.com/content_CVPR_2020/html/Ng_You2Me_Inferring_Body_Pose_in_Egocentric_Video_via_First_and_CVPR_2020_paper.html) | [GitHub](https://github.com/facebookresearch/you2me) |
 | FPHA | 2018 | 1.2K seq. hand action | Hand pose + action | [Paper](https://openaccess.thecvf.com/content_cvpr_2018/html/Garcia-Hernando_First-Person_Hand_Action_CVPR_2018_paper.html) | [Site](https://guiggh.github.io/publications/first-person-hands/) |
 | EgoDexter | 2017 | ~3.2K frames, 4 seq. | Hand tracking under occlusion | [Paper](https://arxiv.org/abs/1704.02201) | [Site](https://handtracker.mpi-inf.mpg.de/projects/OccludedHands/EgoDexter.htm) |
 | EgoHands | 2015 | 4.8K labeled frames | Hand detection / boxes | [Paper](https://openaccess.thecvf.com/content_iccv_2015/html/Bambach_Lending_A_Hand_ICCV_2015_paper.html) | [Site](http://vision.soic.indiana.edu/projects/egohands/) |
-| BEOID | 2014 | 58 videos, 6 environments, 34 object interaction classes, ~30 fps | hand–object interaction, dexterity & 3d | [Paper](https://doi.org/10.5244/C.28.30) | [Site](https://data.bris.ac.uk/data/dataset/3wats8ruq1sp52hq3bo8dkzul3) |
+| BEOID | 2014 | 58 videos, 6 environments, 34 object interaction classes, ~30 fps | hand–object interaction, dexterity & 3d | [Paper](https://doi.org/10.5244/C.28.30) | [Data](https://data.bris.ac.uk/data/dataset/o4hx7jnmfqt01lyzf2n4rchg6) |
 | EDSH | 2013 | 2 videos (~5 min each), pixel-level hand segmentation, egocentric daily activities | hand–object interaction, dexterity & 3d | [Paper](https://openaccess.thecvf.com/content_cvpr_2013/html/Li_Pixel-Level_Hand_Detection_2013_CVPR_paper.html) | [Site](http://www.cs.cmu.edu/~kkitani/datasets/) |
 | Handled Objects | 2009 | 11 object categories, multiple grasp sequences, RGB + depth from wearable camera | hand–object interaction, dexterity & 3d | [Paper](https://doi.org/10.1109/CVPRW.2009.5204360) | N/A |
 ### Entries
 
 - [⭐️] **HOI4D** (2022) — 2.4M RGB-D frames with object poses, hand poses, interaction regions, and motion segmentation for category-level 4D HOI.
-  [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_HOI4D_A_4D_Egocentric_Dataset_for_Category-Level_Human-Object_Interaction_CVPR_2022_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_HOI4D_A_4D_Egocentric_Dataset_for_Category-Level_Human-Object_Interaction_CVPR_2022_paper.html)
+  [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_HOI4D_A_4D_Egocentric_Dataset_for_Category-Level_Human-Object_Interaction_CVPR_2022_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://hoi4d.github.io/)
 
 - [⭐️] **EgoDex** (2025) — 829 h / 30K trajectories; Dexterous manipulation, pose.
   [![arXiv](https://img.shields.io/badge/arXiv-2505.11709-b31b1b.svg)](https://arxiv.org/abs/2505.11709) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2505.11709) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/apple/ml-egodex)
+
+- **EgoAffordance** (2026) — 204K egocentric manipulation episodes with 5.6M visual affordances and 11.6M grasp and trajectory affordances, automatically extracted in a shared 3D actionable representation for VLAff and robot transfer.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.05215-b31b1b.svg)](https://arxiv.org/abs/2608.05215) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://ojh6404.github.io/vlaff/)
 
 - **H-Tac** (2026) — 160 h of egocentric human videos with tactile/action data across 300+ tasks and 135K episodes, introduced for human-centric transferable tactile-action pretraining and future tactile prediction.
   [![arXiv](https://img.shields.io/badge/arXiv-2607.01067-b31b1b.svg)](https://arxiv.org/abs/2607.01067)
@@ -642,7 +741,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
   [![arXiv](https://img.shields.io/badge/arXiv-2307.10387-b31b1b.svg)](https://arxiv.org/abs/2307.10387) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://batfacewayne.github.io/POV_Surgery_io/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/BatFaceWayne/POV_Surgery)
 
 - **VOST** (2023) — 713 videos; VOS, transforming objects.
-  [![arXiv](https://img.shields.io/badge/arXiv-2212.06200-b31b1b.svg)](https://arxiv.org/abs/2212.06200) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://www.vostdataset.org/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/yka-dl/VOST)
+  [![arXiv](https://img.shields.io/badge/arXiv-2212.06200-b31b1b.svg)](https://arxiv.org/abs/2212.06200) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://www.vostdataset.org/)
 
 - **EgoBody** (2022) — 125 seq. / multi-view; Body pose, interaction.
   [![arXiv](https://img.shields.io/badge/arXiv-2112.07642-b31b1b.svg)](https://arxiv.org/abs/2112.07642) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://egobody.ethz.ch/)
@@ -663,7 +762,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/ICCV2021/html/Kwon_H2O_Two_Hands_Manipulating_Objects_for_First_Person_Interaction_Recognition_ICCV_2021_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://openaccess.thecvf.com/content/ICCV2021/html/Kwon_H2O_Two_Hands_Manipulating_Objects_for_First_Person_Interaction_Recognition_ICCV_2021_paper.html) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/taeinkwon/h2odataset)
 
 - **TREK-150** (2021) — 150 EPIC seq; Object tracking.
-  [![arXiv](https://img.shields.io/badge/arXiv-2108.13665-b31b1b.svg)](https://arxiv.org/abs/2108.13665) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://machinelearning.uniud.it/datasets/trek150/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/matteo-dunnhofer/TREK-150-toolkit)
+  [![arXiv](https://img.shields.io/badge/arXiv-2108.13665-b31b1b.svg)](https://arxiv.org/abs/2108.13665) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](http://machinelearning.uniud.it/datasets/trek150/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/matteo-dunnhofer/TREK-150-toolkit)
 
 - **You2Me** (2020) — 14 seq., chest-mounted GoPro; Body pose via ego–exo interaction.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content_CVPR_2020/html/Ng_You2Me_Inferring_Body_Pose_in_Egocentric_Video_via_First_and_CVPR_2020_paper.html) [![arXiv](https://img.shields.io/badge/arXiv-1904.09882-b31b1b.svg)](https://arxiv.org/abs/1904.09882) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/facebookresearch/you2me)
@@ -678,7 +777,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content_iccv_2015/html/Bambach_Lending_A_Hand_ICCV_2015_paper.html) [![Project](https://img.shields.io/badge/Project-Link-blue.svg)](http://vision.soic.indiana.edu/projects/egohands/)
 
 - **BEOID** (2014) — 58 videos, 6 environments, 34 object interaction classes, ~30 fps; hand–object interaction, dexterity & 3d.
-  [![Paper](https://img.shields.io/badge/Paper-DOI-b31b1b.svg)](https://doi.org/10.5244/C.28.30) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://data.bris.ac.uk/data/dataset/3wats8ruq1sp52hq3bo8dkzul3)
+  [![Paper](https://img.shields.io/badge/Paper-DOI-b31b1b.svg)](https://doi.org/10.5244/C.28.30) [![Data](https://img.shields.io/badge/Data-Link-blue.svg)](https://data.bris.ac.uk/data/dataset/o4hx7jnmfqt01lyzf2n4rchg6)
 
 - **EDSH** (2013) — 2 videos (~5 min each), pixel-level hand segmentation, egocentric daily activities; hand–object interaction, dexterity & 3d.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content_cvpr_2013/html/Li_Pixel-Level_Hand_Detection_2013_CVPR_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](http://www.cs.cmu.edu/~kkitani/datasets/)
@@ -689,6 +788,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Benchmark | Capability | Primary data | Official link | Notes |
 |-----------|------------|--------------|---------------|-------|
+| EgoAffordance / VLAff | Visual, grasp, and trajectory affordance prediction | EgoAffordance | [Site](https://ojh6404.github.io/vlaff/) | Dataset+benchmark |
 | H-Tac | Human-to-robot tactile-action pretraining and future tactile prediction | H-Tac | [Paper](https://arxiv.org/abs/2607.01067) | Dataset+pretraining resource |
 | EPIC-Contact / HOPformer | In-the-wild egocentric 3D hand-object pose and contact estimation | EPIC-Contact | [Site](https://sid2697.github.io/epic-contact/) | Dataset+benchmark |
 | HT-Bench | Full-hand tactile representation learning with egocentric vision | HT-Bench | [Paper](https://arxiv.org/abs/2606.19161) | Dataset+benchmark |
@@ -701,7 +801,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | EgoEVHands | Stereo event 3D hand pose and gesture recognition | EgoEVHands | [GitHub](https://github.com/ZJUWang01/EgoEV-HandPose) | Dataset+benchmark |
 | AssemblyHands | Egocentric 3D hand pose | Assembly101 | [Site](https://assemblyhands.github.io/) | Standalone |
 | VISOR | Video object segmentation, hand–object relations | EPIC-KITCHENS | [Site](https://epic-kitchens.github.io/VISOR) | Standalone |
-| TREK-150 | Egocentric single-object tracking | EPIC-KITCHENS | [Site](https://machinelearning.uniud.it/datasets/trek150/) | Standalone |
+| TREK-150 | Egocentric single-object tracking | EPIC-KITCHENS | [Site](http://machinelearning.uniud.it/datasets/trek150/) | Standalone |
 | EggHand | Egocentric 3D hand pose forecasting | EgoExo4D | [Paper](https://arxiv.org/abs/2605.07642) | Method benchmark |
 | FPHA | Hand action + 3D hand pose | FPHA | [Site](https://guiggh.github.io/publications/first-person-hands/) | Standalone |
 | EgoTactile | Full-hand grasp pressure estimation from ego video | EgoTactile | [Site](https://egotactile.github.io/) | Dataset+benchmark |
@@ -717,6 +817,8 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |------|------|-------|-----------|-------|------|
 | ⭐ EgoExoLearn | 2024 | 120 h ego+exo | Procedural, async views | [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Huang_EgoExoLearn_A_Dataset_for_Bridging_Asynchronous_Ego-_and_Exo-centric_View_CVPR_2024_paper.html) | [GitHub](https://github.com/OpenGVLab/EgoExoLearn) |
 | ⭐ Assembly101 | 2022 | 513 h multiview | Assembly, procedure | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.html) | [Site](https://assembly-101.github.io/) |
+| EgoProceVQA | 2026 | 3,600 QA / 31 tasks / 4 scenarios | Key-step procedural reasoning | [Paper](https://arxiv.org/abs/2607.13792) | [Site](https://z1oong.github.io/EgoProceVQA/) |
+| CoMind | 2026 | Dual ego + 2 exo views / 55 environments | Collaborative activity, social reasoning | [Paper](https://arxiv.org/abs/2607.06691) | [Site](https://comind.ethz.ch/) |
 | VLK | 2026 | 48K synthetic paired trajectories | Humanoid loco-manipulation, VLK | [Paper](https://arxiv.org/abs/2606.30645) | [Site](https://vision-language-kinematics.github.io/) |
 | EgoVerse | 2026 | 1,362 h / ~80K episodes | Robot learning, manipulation skills | [Paper](https://arxiv.org/abs/2604.07607) | [Site](https://egoverse.ai/) |
 | EgoLive | 2026 | Large-scale real-world task routines | Robot manipulation learning | [Paper](https://arxiv.org/abs/2604.23570) | N/A |
@@ -739,7 +841,13 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2024/html/Huang_EgoExoLearn_A_Dataset_for_Bridging_Asynchronous_Ego-_and_Exo-centric_View_CVPR_2024_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://openaccess.thecvf.com/content/CVPR2024/html/Huang_EgoExoLearn_A_Dataset_for_Bridging_Asynchronous_Ego-_and_Exo-centric_View_CVPR_2024_paper.html) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/OpenGVLab/EgoExoLearn) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/hyf015/EgoExoLearn)
 
 - [⭐️] **Assembly101** (2022) — 513 h multiview; Assembly, procedure.
-  [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2022/html/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://openaccess.thecvf.com/content/CVPR2022/html/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.html)
+  [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/CVPR2022/html/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://assembly-101.github.io/)
+
+- **EgoProceVQA** (2026) — 3,600 key-step-centric questions across 31 everyday tasks and four procedural scenarios, covering six question types generated with EgoProceGen and human-checked for procedural reasoning evaluation.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.13792-b31b1b.svg)](https://arxiv.org/abs/2607.13792) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://z1oong.github.io/EgoProceVQA/)
+
+- **CoMind** (2026) — Collaborative cooking captured from two synchronized head-mounted cameras and two exocentric views, with audio, gaze, hand/object interactions, social cues, and aligned scans across 55 environments.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.06691-b31b1b.svg)](https://arxiv.org/abs/2607.06691) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://comind.ethz.ch/)
 
 - **VLK** (2026) — 48K synthetic vision-language-kinematics trajectories rendered as egocentric observations in reconstructed indoor 3DGS scenes, paired with language commands and whole-body humanoid kinematic trajectories for loco-manipulation.
   [![arXiv](https://img.shields.io/badge/arXiv-2606.30645-b31b1b.svg)](https://arxiv.org/abs/2606.30645) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://vision-language-kinematics.github.io/)
@@ -796,6 +904,8 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Benchmark | Capability | Primary data | Official link | Notes |
 |-----------|------------|--------------|---------------|-------|
+| EgoProceVQA | Key-step procedural understanding across six QA types | EgoProceVQA | [Site](https://z1oong.github.io/EgoProceVQA/) | Dataset+benchmark |
+| CoMind | Joint attention, socially conditioned interaction anticipation, collaborative handover | CoMind | [Site](https://comind.ethz.ch/) | Dataset+benchmark |
 | VLK | Vision-language-kinematics policy learning for humanoid navigation and object transport | Synthetic 3DGS trajectories | [Site](https://vision-language-kinematics.github.io/) | Dataset+benchmark |
 | HumanEgo | Zero-shot human-to-robot manipulation from egocentric video | HumanEgo | [Site](https://humanego-ai.github.io/) | Dataset+benchmark |
 | EgoSPT / SP-VTP | Spatially prompted visual trajectory prediction for manipulation | EgoSPT | [HF](https://huggingface.co/datasets/JackYFL233/EgoSPT) | Dataset+benchmark |
@@ -815,6 +925,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |------|------|-------|-----------|-------|------|
 | ⭐ Ego-Exo4D | 2024 | 1,286+ h ego+exo | Skilled activity, many tasks | [Paper](https://arxiv.org/abs/2311.18259) | [Site](https://ego-exo4d-data.org/) |
 | ⭐ ADT (Aria Digital Twin) | 2023 | 200 seq., 2 scenes | Egocentric 3D perception | [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Pan_Aria_Digital_Twin_A_New_Benchmark_Dataset_for_Egocentric_3D_ICCV_2023_paper.html) | [Site](https://www.projectaria.com/datasets/adt/) |
+| GST-Bench / GST-Train | 2026 | 6,790 min synthetic video | Global spatial awareness from ego video | [Paper](https://arxiv.org/abs/2608.05747) | N/A |
+| FloAff-Kitchen | 2026 | Cross-scene, multi-view kitchen benchmark | Navigation-to-manipulation affordance | [Paper](https://arxiv.org/abs/2607.24207) | [Site](https://csu-hero-lab.github.io/FloAff-Kitchen_Web/) |
+| EgoHTR | 2026 | 55 seq. / 150K+ frames / 7 scenes | 4D human-terrain reconstruction | [Paper](https://arxiv.org/abs/2607.13472) | [Site](https://egohtr.github.io/) |
 | SG-Ego | 2026 | 3.8M graphs / 7.3K Ego4D videos | Spatio-temporal scene graphs | [Paper](https://arxiv.org/abs/2607.02425) | [HF](https://huggingface.co/datasets/francescapistilli/sg-ego) |
 | PRISM | 2026 | 270K samples / 11.8M frames | Retail embodied VLM, spatial reasoning | [Paper](https://arxiv.org/abs/2603.29281) | [HF](https://huggingface.co/datasets/DreamVu/PRISM-100K) |
 | EgoTraj | 2026 | 10.7 h / 1.15M frames | Egocentric trajectory prediction | [Paper](https://arxiv.org/abs/2605.19004) | [GitHub](https://github.com/yehiahmad/EgoTraj) |
@@ -828,10 +941,19 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 ### Entries
 
 - [⭐️] **Ego-Exo4D** (2024) — 1,286+ h of paired first- and third-person skilled activity with multiview geometry and a broad benchmark suite.
-  [![arXiv](https://img.shields.io/badge/arXiv-2311.18259-b31b1b.svg)](https://arxiv.org/abs/2311.18259) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2311.18259)
+  [![arXiv](https://img.shields.io/badge/arXiv-2311.18259-b31b1b.svg)](https://arxiv.org/abs/2311.18259) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://ego-exo4d-data.org/)
 
 - [⭐️] **ADT (Aria Digital Twin)** (2023) — 200 seq., 2 scenes; Egocentric 3D perception.
   [![Paper](https://img.shields.io/badge/Paper-Link-b31b1b.svg)](https://openaccess.thecvf.com/content/ICCV2023/html/Pan_Aria_Digital_Twin_A_New_Benchmark_Dataset_for_Egocentric_3D_ICCV_2023_paper.html) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://www.projectaria.com/datasets/adt/) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/projectaria/aria-digital-twin)
+
+- **GST-Bench / GST-Train** (2026) — Human-verified global-spatial-temporal questions derived from 6,790 minutes of synthetic first-person exploration, requiring novel-view inference and mapping ego observations onto global top-down scenes, plus a companion training set.
+  [![arXiv](https://img.shields.io/badge/arXiv-2608.05747-b31b1b.svg)](https://arxiv.org/abs/2608.05747)
+
+- **FloAff-Kitchen** (2026) — Cross-scene, multi-view benchmark for predicting where a mobile robot should stand to execute downstream manipulation, spanning varied skills, layouts, furniture styles, and egocentric viewpoints.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.24207-b31b1b.svg)](https://arxiv.org/abs/2607.24207) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://csu-hero-lab.github.io/FloAff-Kitchen_Web/)
+
+- **EgoHTR** (2026) — 55 scene-aligned 4D human-terrain traversal sequences (150K+ frames across seven challenging scenes) with ego/exo Aria video, SLAM, IMU, 3D scans, and parametrized human motion for analysis, synthesis, and humanoid locomotion transfer.
+  [![arXiv](https://img.shields.io/badge/arXiv-2607.13472-b31b1b.svg)](https://arxiv.org/abs/2607.13472) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://egohtr.github.io/)
 
 - **SG-Ego** (2026) — Large-scale spatio-temporal scene-graph annotations extending Ego4D: SG-Ego-Align provides ~3.8M graphs from 7,297 videos, while SG-Ego-Edit adds action-conditioned graph-edit forecasting samples for A-GEF.
   [![arXiv](https://img.shields.io/badge/arXiv-2607.02425-b31b1b.svg)](https://arxiv.org/abs/2607.02425) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://francescapistilli.github.io/GLEN/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/francescapistilli/glen) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/francescapistilli/sg-ego)
@@ -868,6 +990,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Benchmark | Capability | Primary data | Official link | Notes |
 |-----------|------------|--------------|---------------|-------|
+| GST-Bench | Global spatial-temporal VQA and allocentric mapping from ego streams | GST-Bench | [Paper](https://arxiv.org/abs/2608.05747) | Dataset+benchmark |
+| FloAff-Kitchen | Target-conditioned floor-affordance prediction for mobile manipulation | FloAff-Kitchen | [Site](https://csu-hero-lab.github.io/FloAff-Kitchen_Web/) | Dataset+benchmark |
+| EgoHTR | Scene-aligned 4D human motion reconstruction and terrain traversal | EgoHTR | [Site](https://egohtr.github.io/) | Dataset+benchmark |
 | A-GEF / SG-Ego | Action-conditioned scene-graph edit forecasting and graph-text reasoning | SG-Ego | [Site](https://francescapistilli.github.io/GLEN/) | Dataset+benchmark |
 | Ego-Exo4D | Ego–exo skill understanding, many tasks | Ego-Exo4D | [Site](https://ego-exo4d-data.org/) | Suite |
 | EgoTraj | Egocentric multimodal trajectory forecasting | EgoTraj | [GitHub](https://github.com/yehiahmad/EgoTraj) | Dataset+benchmark |
@@ -882,6 +1007,8 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |------|-------------|------|
 | Ego4D CLI | Official downloader and tooling for accessing Ego4D releases. | [GitHub](https://github.com/facebookresearch/Ego4d) |
 | HOMIE-toolkit | Toolkit released with Ropedia Xperience-10M for large-scale multimodal ego data. | [GitHub](https://github.com/Ropedia/HOMIE-toolkit) |
+| Open-AoE Toolchain | Smartphone capture, reconstruction, visualization, retargeting, and model-ready conversion for Open-AoE. | [GitHub](https://github.com/ant-research/Open-AoE) |
+| Ego-OSCAR | Open-hardware stereo-inertial capture device and recording stack with a sub-$200 bill of materials. | [Paper](https://arxiv.org/abs/2608.08285) |
 | AssemblyHands Toolkit | Official toolkit for the AssemblyHands benchmark. | [GitHub](https://github.com/facebookresearch/assemblyhands-toolkit) |
 | TREK-150 Toolkit | Toolkit for the TREK-150 egocentric tracking benchmark. | [GitHub](https://github.com/matteo-dunnhofer/TREK-150-toolkit) |
 
