@@ -1009,6 +1009,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | HOMIE-toolkit | Toolkit released with Ropedia Xperience-10M for large-scale multimodal ego data. | [GitHub](https://github.com/Ropedia/HOMIE-toolkit) |
 | Open-AoE Toolchain | Smartphone capture, reconstruction, visualization, retargeting, and model-ready conversion for Open-AoE. | [GitHub](https://github.com/ant-research/Open-AoE) |
 | Ego-OSCAR | Open-hardware stereo-inertial capture device and recording stack with a sub-$200 bill of materials. | [Paper](https://arxiv.org/abs/2608.08285) |
+| ego-stereo-cn-v1-tools | Loading + timing verification for the ego-stereo-cn-v1 LeRobot v3 stereo+IMU sample (hardware-synced). | [GitHub](https://github.com/TateZhouSiu/ego-stereo-cn-v1-tools) |
 | AssemblyHands Toolkit | Official toolkit for the AssemblyHands benchmark. | [GitHub](https://github.com/facebookresearch/assemblyhands-toolkit) |
 | TREK-150 Toolkit | Toolkit for the TREK-150 egocentric tracking benchmark. | [GitHub](https://github.com/matteo-dunnhofer/TREK-150-toolkit) |
 
