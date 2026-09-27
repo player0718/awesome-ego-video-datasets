@@ -17,7 +17,7 @@
 
 ## Overview
 
-Latest research update: **2026-09-26**. This update covers new papers and data releases since the August 20 dataset update, including the period after the September 21 tools-only merge. See the [research audit](research/2026-09-26.md) for dates, search coverage, and screened candidates. `N/A` indicates that an additional resource link is unavailable; a paper entry alone does not imply downloadable data.
+Latest research update: **2026-09-26**. This update covers new papers and data releases since the August 20 dataset update, including the period after the September 21 tools-only merge. `N/A` indicates that an additional resource link is unavailable; a paper entry alone does not imply downloadable data.
 
 <p align="center">
   <img src="overview.png" alt="Overview of egocentric video datasets" width="100%">
