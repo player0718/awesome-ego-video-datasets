@@ -750,6 +750,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |------|------|-------|-----------|-------|------|
 | ⭐ HOI4D | 2022 | 2.4M frames / 4K seq. | 4D HOI | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_HOI4D_A_4D_Egocentric_Dataset_for_Category-Level_Human-Object_Interaction_CVPR_2022_paper.html) | [Site](https://hoi4d.github.io/) |
 | ⭐ EgoDex | 2025 | 829 h / 30K trajectories | Dexterous manipulation, pose | [Paper](https://arxiv.org/abs/2505.11709) | [GitHub](https://github.com/apple-aiml-research/ml-egodex) |
+| TrueTrace Factory Stereo Egocentric | 2026 | 581 episodes / 10.06 h, 11 factory tasks | Stereo 3D hands, factory hand-work | N/A | [HF](https://huggingface.co/datasets/truetracedata/factory-stereo-egocentric) · [Site](https://truetracedata.com/datasets/factory-stereo-egocentric/) |
 | TouchScale | 2026 | 500 h corpus / 100 h currently released | Visual–tactile learning, contact-rich manipulation | [Paper](https://arxiv.org/abs/2610.10288) | [Site](https://touch-scale.github.io/) · [Code](https://github.com/phai-lab/touchscale) · [HF](https://huggingface.co/datasets/2077AIDataFoundation/TouchScale) |
 | Ego-Exo4D-HM | 2026 | 4D human meshes over Ego-Exo4D captures | Dense human motion reconstruction | [Paper](https://arxiv.org/abs/2609.30187) | [Site](https://abhiram824.github.io/egoexo4d_human_meshes/) |
 | EXYLOS VR Capture 20h Sample | 2026 | 195 episodes / 21.14 h | Multimodal motion and manipulation | N/A | [HF](https://huggingface.co/datasets/ExylosAi/egocentric-vr-capture-20h-multimodal-sample) |
@@ -809,6 +810,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 - [⭐️] **EgoDex** (2025) — 829 h / 30K trajectories; Dexterous manipulation, pose.
   [![arXiv](https://img.shields.io/badge/arXiv-2505.11709-b31b1b.svg)](https://arxiv.org/abs/2505.11709) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/apple-aiml-research/ml-egodex)
+
+- **TrueTrace Factory Stereo Egocentric** (2026) — Head-mounted stereo (fisheye pair, 1920×1080) egocentric recordings of real factory hand-work across 11 tasks at 9 anonymized sites, with synchronized IMU, per-episode calibration and stereo-triangulated 21-keypoint 3D hands (model output). 581 episodes, 10.06 hours, in LeRobot v3.0 plus a full-resolution raw format. Gated with automatic approval, CC BY-NC 4.0.
+  [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://truetracedata.com/datasets/factory-stereo-egocentric/) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/truetracedata/factory-stereo-egocentric)
 
 - **TouchScale** (2026) — Unified capture of egocentric RGB-D, wrist RGB, and dense bimanual tactile measurements across roughly 2K task descriptions in the full corpus. The current gated release contains 100 h, 15,324 episodes, and 929 tasks under CC BY-NC 4.0; the full 500 h are planned before November 2026.
   [![arXiv](https://img.shields.io/badge/arXiv-2610.10288-b31b1b.svg)](https://arxiv.org/abs/2610.10288) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://touch-scale.github.io/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/phai-lab/touchscale) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/2077AIDataFoundation/TouchScale)
