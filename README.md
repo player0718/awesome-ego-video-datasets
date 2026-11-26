@@ -881,6 +881,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |------|------|-------|-----------|-------|------|
 | ⭐ HOI4D | 2022 | 2.4M frames / 4K seq. | 4D HOI | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_HOI4D_A_4D_Egocentric_Dataset_for_Category-Level_Human-Object_Interaction_CVPR_2022_paper.html) | [Site](https://hoi4d.github.io/) |
 | ⭐ EgoDex | 2025 | 829 h / 30K trajectories | Dexterous manipulation, pose | [Paper](https://arxiv.org/abs/2505.11709) | [GitHub](https://github.com/apple-aiml-research/ml-egodex) |
+| Autelica Tabletop 3D Hands Sample | 2026 | 5 clips / ~78 s / 4 synced cameras | Metric 3D hand pose, ego + fixed views | N/A | [Site](https://autelica.com/sample/) · [Data](https://media.autelica.com/sample/hands/autelica_hands_sample.zip) |
 | EgoContact | 2026 | 22.5K verified interaction events | Intent-conditioned future contact prediction | [Paper](https://arxiv.org/abs/2610.39167) | [Site](https://egocontact.github.io/) |
 | EgoAIM / Gaze2HOI | 2026 | 4 interaction phases / 11 public demo examples | Gaze-conditioned intention and interaction forecasting | [Paper](https://arxiv.org/abs/2610.27877) | [Site](https://gaze2hoi.github.io/) · [Code](https://github.com/gaze2hoi/Gaze2HOI) · [HF](https://huggingface.co/datasets/gaze2hoi/EgoAIM-Demo) |
 | HumanTouch / SparkArena | 2026 | 1,000 h tactile human manipulation (paper) | Visual–tactile pretraining and dexterous control | [Paper](https://arxiv.org/abs/2610.22342) | [Site](https://xsparkai.com/Spark-0) · [Code](https://github.com/XsparkAI/Spark-0) |
@@ -943,6 +944,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 - [⭐️] **EgoDex** (2025) — 829 h / 30K trajectories; Dexterous manipulation, pose.
   [![arXiv](https://img.shields.io/badge/arXiv-2505.11709-b31b1b.svg)](https://arxiv.org/abs/2505.11709) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/apple-aiml-research/ml-egodex)
+
+- **Autelica Tabletop 3D Hands Sample** (2026) — Five desk tasks (box stacking, a laptop, plugging in a USB-C cable, a thumbscrew mount, drone battery packs), each about 15 s, filmed by a head camera and three fixed cameras, so it is not ego-only. Both hands are given as 21 joints each in one metric world frame, with the head camera pose on every frame and a held-out-camera error per clip. Public sample under an evaluation licence, not an open licence; no paper.
+  [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://autelica.com/sample/) [![Data](https://img.shields.io/badge/Data-Download-green.svg)](https://media.autelica.com/sample/hands/autelica_hands_sample.zip)
 
 - **EgoContact** (2026) — Pre-contact egocentric observations paired with semantic intent and pixel-precise contact locations evaluate manipulation priors and affordance transfer across in-the-wild scenes. The project marks code and data as coming soon.
   [![arXiv](https://img.shields.io/badge/arXiv-2610.39167-b31b1b.svg)](https://arxiv.org/abs/2610.39167) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://egocontact.github.io/)
